@@ -4,3 +4,5 @@ export * from './Header';
 export * from './Footer';
 export * from './Exp';
 export * from './Project';
+export * from './BottomButton';
+export * from './TopButton';

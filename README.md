@@ -1,10 +1,10 @@
-<h1 align="center">안녕하세요. resume 코드 입니다. 😀</h1>
+<h1 align="center">안녕하세요. 강승훈 입니다. 😀</h1>
 
 ## Start
 
 ```sh
-yarn install
-yarn  start
+    yarn install
+    yarn  start
 ```
 
 ---
@@ -12,15 +12,16 @@ yarn  start
 ## Stack
 
 ```sh
--   Typescript
--   React
--   Styled-component
+    Typescript
+    React
+    Styled-component
+    Mobx
 ```
 ---
 
 ## author
 👐🏻 강승훈
-
+* Link: [resume](https://resume-seunghun.firebaseapp.com)
 * Github: [link](https://github.com/bluelion2)
 
 🙋🏻 🙋🏻‍♂️

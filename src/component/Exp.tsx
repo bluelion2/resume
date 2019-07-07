@@ -27,6 +27,10 @@ const Stack = styled.span`
     :nth-child(1) {
         margin-left: 0;
     }
+    :hover {
+        background-color: #222;
+        color: white;
+    }
 `
 
 const ProjectList = styled.ul`

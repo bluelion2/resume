@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { Exp } from '../component';
 import { IExpList } from '../interface/interface';
 
-const ExpContainer = styled.div`
+const ExpContainer = styled.section`
     padding: 5% 10%;
     border: 1px solid black;
     background-color: white;
@@ -37,7 +37,7 @@ const ExpList: Array<IExpList> = [
                 link: 'https://play.google.com/store/apps/details?id=app.fooding.delivery',
                 mywork: [
                     '프론트엔드 개발환경 셋팅 및 전체 기능 구현',
-                    'Android Store 출시'
+                    'Google Play Store 출시'
                 ],
             },
             { 
@@ -56,8 +56,10 @@ const ExpList: Array<IExpList> = [
                 date: '2018.10 ~ 2018.12', 
                 subtitle: '푸딩 웹사이트를 control하기 위한 Admin Page 개발 및 유지보수를 담당했습니다. 기능 외에는 따로 디자인을 하지 않아서 Angular Material을 이용하였으며, 완성 후 추가적인 기획이 잡힐때마다 개발을 진행되었습니다.', 
                 mywork: [
-                    '프론트엔드 개발환경 셋팅', 
-                    'Angular Material을 이용한 디자인 통일성 유지 및 데스크탑 및 테블릿 사용지원', 
+                    '프론트엔드 개발환경 셋팅 및 전체기능 구현', 
+                    'Angular Material을 이용한 디자인 통일성 유지', 
+                    '데스크탑 및 테블릿 사용지원',
+                    'Chart.js를 이용한 차트 지원'
                 ] 
             },
         ],

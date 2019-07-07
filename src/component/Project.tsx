@@ -38,6 +38,7 @@ export const Project = (props: IProject): JSX.Element => {
                 {project.mywork.map((work: string) => {
                     return <MyWork key={work}>{work}</MyWork>
                 })}
+                {project.link ? <a href="project.link">link</a> : null}
             </ul>
         </ProjectItem>
     )

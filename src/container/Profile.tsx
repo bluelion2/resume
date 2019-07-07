@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { TABLET } from '../types';
 
-const ProfileBox = styled.div`
+const ProfileBox = styled.section`
     padding: 5% 10%;
     background-color: white;
     color: black;

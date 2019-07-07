@@ -1,15 +1,26 @@
 import React from 'react';
-import { Main } from './container';
+import { Main, ButtonContainer } from './container';
 import { Footer, Header } from './component';
+import { inject, observer } from 'mobx-react';
+import AppStore from './store/AppStore';
 
-const App: React.FC = (): JSX.Element => {
-  return (
-    <>
-      <Header/>
-      <Main/>
-      <Footer/>
-    </>
-  );
+@inject('store')
+@observer
+export default class App extends React.Component<{store? : AppStore}> {
+
+  render() {
+    const { store }: any = this.props;
+    return (
+      <>
+        <Header/>
+        <Main/>
+        <Footer/>
+        <ButtonContainer
+          down={store.handleDown}
+          up={store.handleUp}
+          counter={store.counter}
+        />
+      </>
+    )
+  }
 }
-
-export default App;

@@ -54,6 +54,11 @@ const Item = styled.div`
         width: 120px;
         height: 80px;
         object-fit: contain;
+        transform-origin: 50% 55%;
+        transition: transform .5s ease;
+        :hover {
+            transform: scale(1.25);
+        }
     }
 `
 

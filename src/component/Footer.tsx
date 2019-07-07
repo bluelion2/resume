@@ -18,8 +18,7 @@ const FooterBox = styled.footer`
 export const Footer = (): JSX.Element => {
     return (
         <FooterBox>
-            Copyright by Seunghun Kang
-            <a className="github" href="https://github.com/bluelion2"></a>         
+            <a className="github" href="https://github.com/bluelion2"></a>
         </FooterBox>
     )
 }
