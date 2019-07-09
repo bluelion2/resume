@@ -27,18 +27,46 @@ const MyWork = styled.li`
     margin: 10px 0;
 `
 
+const StackList = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+`
+
+const Stack = styled.span`
+    background-color: lightgray;
+    color: #6c757d;
+    margin: 0 10px 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    :nth-child(1) {
+        margin-left: 0;
+    }
+    :hover {
+        background-color: #222;
+        color: white;
+    }
+`
+
 export const Project = (props: IProject): JSX.Element => {
-    const { project } = props;
+    const { project } = props;   
     return (
         <ProjectItem>
             <h4>{project.title}</h4>
-            <p>{project.subtitle}</p>
+            <p>
+                {project.subtitle}
+                {project.link ? <span> <a href="project.link">link</a></span> : null}
+            </p>
+            <StackList>
+                {project.stack.map((item: string) => {
+                    return <Stack key={item}>{item}</Stack>
+                })}
+            </StackList>
             <ul>
                 <li>작업 기간 : {project.date}</li>
                 {project.mywork.map((work: string) => {
                     return <MyWork key={work}>{work}</MyWork>
                 })}
-                {project.link ? <a href="project.link">link</a> : null}
+                {project.youtube ? <iframe src={project.youtube}></iframe> : null}
             </ul>
         </ProjectItem>
     )

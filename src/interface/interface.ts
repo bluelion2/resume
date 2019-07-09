@@ -9,6 +9,8 @@ export interface Project {
     mywork: Array<string>;
     subtitle: string;
     title: string;
+    youtube?: string;
+    stack: Array<string>;
 }
 
 export interface IProject {
@@ -19,7 +21,6 @@ export interface IExpList {
     name: string;
     subtitle: string;
     date: string;
-    Icon?: string;
-    stack: Array<string>;
+    icon?: string;
     project: Array<Project>;
 }
