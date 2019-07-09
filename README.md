@@ -15,7 +15,6 @@
     Typescript
     React
     Styled-component
-    Mobx
 ```
 ---
 
