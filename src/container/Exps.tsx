@@ -46,7 +46,7 @@ const ExpList: Array<IExpList> = [
                 title: 'Fooding 개발 및 유지보수', 
                 date: '2018.10 ~ 2019.02', 
                 subtitle: '외주로 부터 개발된 fooding.io 를 개선하는 작업을 진행하였습니다. 요청에 따라 사이트 내 정기배송 소개페이지 등 추가 개발도 진행하였습니다. 이와 관련해서 개선하기 위한 간단한 발표도 해보았습니다.', 
-                link: 'https://speakerdeck.com/bluelion2/angular-website-update',
+                link: 'https://drive.google.com/open?id=1TQQJSFa6Em6CX0D9NRdAxvY2dRxQQ6K_',
                 stack: ['Angular7', 'Rxjs', 'Typesccript', 'Scss'],
                 mywork: [
                     '프론트엔드 기술 환경 개선 및 기능 추가', 
