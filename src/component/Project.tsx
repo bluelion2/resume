@@ -54,7 +54,7 @@ export const Project = (props: IProject): JSX.Element => {
             <h4>{project.title}</h4>
             <p>
                 {project.subtitle}
-                {project.link ? <span> <a href="project.link">link</a></span> : null}
+                {project.link ? <span> <a href={project.link}>link</a></span> : null}
             </p>
             <StackList>
                 {project.stack.map((item: string) => {
