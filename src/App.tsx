@@ -2,15 +2,13 @@ import React from 'react';
 import { Main } from './container';
 import { Footer, Header } from './component';
 
-export default class App extends React.Component<{}> {
-
-  render(): JSX.Element {
-    return (
-      <>
+const App = (): JSX.Element => {
+    return <>
         <Header/>
         <Main/>
         <Footer/>
-      </>
-    )
-  }
-}
+    </>
+};
+
+export default App;
+
