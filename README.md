@@ -16,6 +16,7 @@
     Typescript
     React
     Styled-component
+    deploy: zeit
 ```
 ---
 
