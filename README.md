@@ -22,7 +22,7 @@
 
 ## author
 👐🏻 강승훈
-* Link: [resume](https://resume-one-xi.now.sh/)
+* Link: [resume](https://resume.sh89.now.sh)
 * Github: [link](https://github.com/bluelion2)
 
 🙋🏻 🙋🏻‍♂️
