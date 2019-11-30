@@ -21,7 +21,7 @@
 
 ## author
 👐🏻 강승훈
-* Link: [resume](https://resume-seunghun.firebaseapp.com)
+* Link: [resume](https://resume-one-xi.now.sh/)
 * Github: [link](https://github.com/bluelion2)
 
 🙋🏻 🙋🏻‍♂️
