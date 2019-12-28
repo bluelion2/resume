@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { Profile } from './Profile';
 import { Skills } from './Skills';
 import { Exps } from './Exps';
+import Etc from './Etc';
 import { TABLET } from '../types';
 
 const MainContainer = styled.main`
@@ -24,6 +25,7 @@ export const Main = (): JSX.Element => {
                 <Profile/>
                 <Skills/>
                 <Exps/>
+                {/* <Etc /> */}
            </MainContainer>
         </>
     )
