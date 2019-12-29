@@ -23,12 +23,13 @@ const EtcList: Array<IExpList> = [
         }
     ]
   },
-]
+];
 
+// 나중에 업뎃 하기
 const Etc = (): JSX.Element => {
   return (
     <ExpContainer>
-      <h2>그 외. 활동들</h2>
+      <h2>그 외. 활동들..</h2>
       {EtcList.map(item => <Exp career={item} key={item.name}/>)}
     </ExpContainer>
   )
