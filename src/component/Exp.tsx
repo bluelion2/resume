@@ -37,6 +37,7 @@ export const Exp = (props: { career: IExpList }): JSX.Element => {
     <ExpBox>
       <Icon src={career.icon} alt={career.name} />
       <h3>{career.name}</h3>
+      <p>{career.date}</p>
       <p>{career.subtitle}</p>
       <h4>주요 업무 내용</h4>
       <ProjectList>

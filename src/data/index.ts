@@ -28,12 +28,12 @@ export const ExpList: Array<IExpList> = [
     name: "(주) 열두달",
     subtitle:
       "단체음식을 배송 하는 Fooding의 프론트엔드 개발자로 근무를 하면서 쇼핑사이트 유지보수와 내부적으로 필요한 Admin Page, 배송기사용 앱을 개발하였습니다.",
-    date: "2018.10 ~ 2019.08",
+    date: "2018.10 ~ 2019.07",
     icon: "/assets/fooding.png",
     project: [
       {
         title: "Fooding Menu App 개발",
-        date: "2019.07 ~ 2019.08",
+        date: "2019.07 ~ 2019.07",
         subtitle:
           "정기배송 서비스를 이용하는 고객들을 대상으로 메뉴를 안내하는 앱 개발을 진행하였습니다. 네이티브와 비슷한 성능과, 빠른 개발이라는 목적을 달성하기 위해 React Native를 이용해 개발을 진행하였습니다. 내부 사정으로 인해 프로젝트가 중단되었습니다.",
         link: "",
