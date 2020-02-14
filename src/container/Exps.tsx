@@ -12,7 +12,7 @@ export const ExpContainer = styled.section`
 
 export const Exps = (): JSX.Element => (
   <ExpContainer>
-    <h2>Experience</h2>
+    <h2>Work Experience</h2>
     {ExpList.map(exp => (
       <Exp career={exp} key={exp.name} />
     ))}

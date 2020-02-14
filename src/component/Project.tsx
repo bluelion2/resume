@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { TABLET } from "../types";
+import { TABLET, MOBILE } from "../types";
 import { IProject } from "../interface/interface";
 
 const ProjectItem = styled.li`
@@ -30,6 +30,10 @@ const MyWork = styled.li`
 const StackList = styled.div`
   display: flex;
   flex-wrap: wrap;
+  margin-left: 35px;
+  ${MOBILE} {
+    margin-left: none;
+  }
 `;
 
 const Stack = styled.span`
@@ -51,7 +55,9 @@ export const Project = (props: IProject): JSX.Element => {
   const { project } = props;
   return (
     <ProjectItem>
-      <h4>{project.title}</h4>
+      <h4>
+        {project.title} / {project.date}
+      </h4>
       <p>
         {project.subtitle}
         {project.link ? (
@@ -66,8 +72,8 @@ export const Project = (props: IProject): JSX.Element => {
           return <Stack key={item}>{item}</Stack>;
         })}
       </StackList>
+      <h4>My Work</h4>
       <ul>
-        <li>기간 : {project.date}</li>
         {project.mywork.map((work: string) => {
           return <MyWork key={work}>{work}</MyWork>;
         })}

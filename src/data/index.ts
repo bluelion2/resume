@@ -53,7 +53,10 @@ export const ExpList: Array<IExpList> = [
           "https://play.google.com/store/apps/details?id=app.fooding.delivery",
         youtube: "https://www.youtube.com/embed/_tYefWU1kzY",
         stack: ["Ionic4", "Sass"],
-        mywork: ["프론트엔드 개발환경 셋팅 및 전체 기능 구현과 배포"]
+        mywork: [
+          "프론트엔드 개발환경 셋팅 및 전체 기능 구현과 구글 플레이스토어 배포",
+          "안드로이드 태블릿 및 모바일에 맞게 개발"
+        ]
       },
       {
         title: "Fooding 개발 및 유지보수",
@@ -67,6 +70,7 @@ export const ExpList: Array<IExpList> = [
         mywork: [
           "코드 리팩토링, Angular 공식문서에서 제안하는 개발 방법을 적용해 구조 개선",
           "정기배송 신청 서비스 View 개발",
+          "Google Lighthouse를 이용한 SEO, 성능 향상 기여",
           "lazy loading을 통한 초기 로딩속도 개선"
         ]
       },
@@ -134,5 +138,6 @@ export const Support: Array<Skill> = [
   { name: "notion", url: "/assets/notion.jpg" },
   { name: "PostMan", url: "/assets/postman.png" },
   { name: "zeplin", url: "/assets/zeplin.jpg" },
-  { name: "Source tree", url: "/assets/sourcetree.png" }
+  { name: "Source tree", url: "/assets/sourcetree.png" },
+  { name: "Google Lighthouse", url: "/assets/lighthouse.jpeg" }
 ];

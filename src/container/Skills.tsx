@@ -4,7 +4,7 @@ import { Current, Prev, Support } from "../data";
 
 export const Skills = (): JSX.Element => (
   <section>
-    <h2>Skill</h2>
+    <h2>Skills</h2>
     <SkillList list={Current} title="주로 사용한 기술입니다." />
     <SkillList
       list={Prev}

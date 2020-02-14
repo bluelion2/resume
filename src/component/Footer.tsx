@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { MOBILE } from "../types";
 
 const FooterBox = styled.footer`
-  height: 12vh;
+  margin-top: 5vh;
   font-size: 1.2rem;
   background-color: #f0f0f0;
   color: black;

@@ -11,7 +11,7 @@ const ExpBox = styled.div`
   p {
     color: black;
     margin-bottom: 10px;
-    margin-left: 35px;
+    margin-left: 38px;
     ${MOBILE} {
       margin-left: none;
     }
