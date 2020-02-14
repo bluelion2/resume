@@ -1,32 +1,28 @@
-import React from 'react';
-import styled from 'styled-components';
-import { Profile } from './Profile';
-import { Skills } from './Skills';
-import { Exps } from './Exps';
-import Etc from './Etc';
-import { TABLET } from '../types';
+import React from "react";
+import styled from "styled-components";
+import { Profile } from "./Profile";
+import { Skills } from "./Skills";
+import { Exps } from "./Exps";
+import { TABLET } from "../types";
 
 const MainContainer = styled.main`
-    display: flex;
-    align-item: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 1024px;
-    margin: 0 auto;
-    ${TABLET} {
-        width: 90%;
-    }
-`
+  display: flex;
+  align-item: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 1024px;
+  margin: 0 auto;
+  ${TABLET} {
+    width: 90%;
+  }
+`;
 
-export const Main = (): JSX.Element => {
-    return (
-        <>
-           <MainContainer>
-                <Profile/>
-                <Skills/>
-                <Exps/>
-                {/* <Etc /> */}
-           </MainContainer>
-        </>
-    )
-}
+export const Main = (): JSX.Element => (
+  <>
+    <MainContainer>
+      <Profile />
+      <Skills />
+      <Exps />
+    </MainContainer>
+  </>
+);
