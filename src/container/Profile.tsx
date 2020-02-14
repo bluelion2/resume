@@ -8,6 +8,15 @@ const ProfileBox = styled.section`
   color: black;
 `;
 
+const PDFBox = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  img {
+    width: 30px;
+  }
+`;
+
 const ProfileInfo = styled.div`
   display: flex;
   align-items: center;
@@ -54,5 +63,14 @@ export const Profile = (): JSX.Element => (
         참여하고 아이디어를 제시할 수 있는 환경을 선호합니다.
       </p>
     </ProfileInfo>
+    <PDFBox>
+      PDF로 다운로드하기
+      <a
+        download
+        href="https://drive.google.com/open?id=1MfNFH21IEo9e5L58oztAH5-ENsks9X0F"
+      >
+        <img src="/assets/download.png" alt="download-icon"></img>
+      </a>
+    </PDFBox>
   </ProfileBox>
 );
