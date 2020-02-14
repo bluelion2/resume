@@ -89,7 +89,7 @@ export const ExpList: Array<IExpList> = [
     name: "(주) 리브햇",
     subtitle:
       "(주)투어벨의 개발을 담당하는 자회사인 (주)리브햇의 개발팀 신입으로 투어벨의 모바일 사용자를 위한 모바일 웹 개발을 진행하였습니다.",
-    date: "2018.07 ~ 2019.09",
+    date: "2018.07 ~ 2018.09",
     icon: "/assets/tourbell.png",
     project: [
       {
