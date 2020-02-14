@@ -67,7 +67,7 @@ export const Project = (props: IProject): JSX.Element => {
         })}
       </StackList>
       <ul>
-        <li>작업 기간 : {project.date}</li>
+        <li>기간 : {project.date}</li>
         {project.mywork.map((work: string) => {
           return <MyWork key={work}>{work}</MyWork>;
         })}

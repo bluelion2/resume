@@ -12,15 +12,14 @@ export const ExpList: Array<IExpList> = [
       {
         title: "웹 매쓰플랫 개발 및 유지보수",
         date: "2019.08 ~ ",
-        subtitle:
-          "안드로이드 태블릿앱 '매쓰플렛'과 같은 기능을 웹에서 지원하기 위한 프로젝트를 진행하고 있습니다. 19년 11월 1차 배포 이후, 지속적인 개발 및 유지보수를 하고 있습니다",
+        subtitle: `안드로이드 태블릿앱 '매쓰플렛'과 같은 기능을 웹에서 지원하기 위한 프로젝트를 진행하고 있습니다. 핵심 기능의 개발을 도맡아 개발하고, 먼저 개발된 기능의 유지보수와 코드 리팩토링을 하고 있습니다.`,
         link: "https://my.mathflat.com",
         stack: ["React", "Mobx", "Redux", "Sass", "Typescript"],
         mywork: [
           "Redux thunk 상태관리를 Mobx로 변경 (Mobx4)",
           "IE11부터 모던 브라우저 까지의 서비스 지원",
-          "학생별 맞춤형 학습지, 교재를 관리하는 탭 개발",
-          "핵심 기능중 하나인, '학습지 만들기' 기능"
+          "핵심 기능중 하나인, 학생별 맞춤형 학습지, 교재를 관리하는 탭, '학습지 만들기' 개발",
+          "코드 리팩토링을 통해 컴포넌트의 재사용성을 높이려 함"
         ]
       }
     ]
@@ -66,7 +65,7 @@ export const ExpList: Array<IExpList> = [
         youtube: "https://www.youtube.com/embed/jQ1YNnLlUKs",
         stack: ["Angular7", "Sass"],
         mywork: [
-          "코드 리팩토링, Angular 공식문서에서 제안하는 개발 방법을 적용해 프론트엔드 기술 환경 개선",
+          "코드 리팩토링, Angular 공식문서에서 제안하는 개발 방법을 적용해 구조 개선",
           "정기배송 신청 서비스 View 개발",
           "lazy loading을 통한 초기 로딩속도 개선"
         ]
@@ -125,7 +124,9 @@ export const Prev: Array<Skill> = [
   { name: "Ionic", url: "/assets/ionic.jpeg" },
   { name: "React Native", url: "/assets/react.png" },
   { name: "Redux", url: "/assets/Redux.png" },
-  { name: "Rxjs", url: "/assets/rxjs.png" }
+  { name: "Rxjs", url: "/assets/rxjs.png" },
+  { name: "Cypress", url: "/assets/cypress.jpeg" },
+  { name: "Jest", url: "/assets/jest.png" }
 ];
 
 export const Support: Array<Skill> = [

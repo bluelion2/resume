@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Project } from "./Project";
-import { TABLET } from "../types";
+import { TABLET, MOBILE } from "../types";
 import { IExpList } from "../interface/interface";
 
 const ExpBox = styled.div`
@@ -11,6 +11,10 @@ const ExpBox = styled.div`
   p {
     color: black;
     margin-bottom: 10px;
+    margin-left: 35px;
+    ${MOBILE} {
+      margin-left: none;
+    }
   }
 `;
 
