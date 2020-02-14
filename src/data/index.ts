@@ -12,7 +12,7 @@ export const ExpList: Array<IExpList> = [
       {
         title: "웹 매쓰플랫 개발 및 유지보수",
         date: "2019.08 ~ ",
-        subtitle: `안드로이드 태블릿앱 '매쓰플렛'과 같은 기능을 웹에서 지원하기 위한 프로젝트를 진행하고 있습니다. 핵심 기능의 개발을 도맡아 개발하고, 먼저 개발된 기능의 유지보수와 코드 리팩토링을 하고 있습니다.`,
+        subtitle: `안드로이드 태블릿앱 '매쓰플렛'과 같은 기능을 웹에서 지원하기 위한 프로젝트를 진행하고 있습니다. 핵심 기능을 도맡아 개발하고, 먼저 개발된 기능의 유지보수와 코드 리팩토링을 하고 있습니다.`,
         link: "https://my.mathflat.com",
         stack: ["React", "Mobx", "Redux", "Sass", "Typescript"],
         mywork: [
@@ -38,11 +38,7 @@ export const ExpList: Array<IExpList> = [
           "정기배송 서비스를 이용하는 고객들을 대상으로 메뉴를 안내하는 앱 개발을 진행하였습니다. 네이티브와 비슷한 성능과, 빠른 개발이라는 목적을 달성하기 위해 React Native를 이용해 개발을 진행하였습니다. 내부 사정으로 인해 프로젝트가 중단되었습니다.",
         link: "",
         stack: ["React native", "Typescript", "Mobx"],
-        mywork: [
-          "프론트엔드 전체 개발환경 셋팅",
-          "Mobx를 이용한 스토어관리",
-          "React Native를 통한 모바일 앱 개발"
-        ]
+        mywork: ["Mobx를 이용한 스토어관리", "모바일 앱 퍼블리싱"]
       },
       {
         title: "Fooding Delivery App 개발",
