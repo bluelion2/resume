@@ -53,7 +53,7 @@ export const ExpList: Array<IExpList> = [
         link:
           "https://play.google.com/store/apps/details?id=app.fooding.delivery",
         youtube: "https://www.youtube.com/embed/_tYefWU1kzY",
-        stack: ["Ionic4", "Typescript", "Scss"],
+        stack: ["Ionic4", "Sass"],
         mywork: ["프론트엔드 개발환경 셋팅 및 전체 기능 구현과 배포"]
       },
       {
@@ -63,21 +63,21 @@ export const ExpList: Array<IExpList> = [
           "외주로 부터 개발된 fooding.io 를 인계받아 개선하는 작업을 진행하였습니다. 요청에 따라 사이트 내 정기배송 소개페이지 등 추가 개발도 진행하였습니다. 이와 관련해서 개선하기 위한 경험을 간단한 발표로 해보았습니다.",
         link:
           "https://drive.google.com/open?id=1TQQJSFa6Em6CX0D9NRdAxvY2dRxQQ6K_",
-        youtube: "https://youtu.be/jQ1YNnLlUKs",
-        stack: ["Angular7", "Typescript", "Scss"],
+        youtube: "https://www.youtube.com/embed/jQ1YNnLlUKs",
+        stack: ["Angular7", "Sass"],
         mywork: [
-          "프론트엔드 기술 환경 개선 및 기능 추가",
-          "lazy loading을 통한 초기 로딩속도 개선",
-          "중복되는 함수 및 변수들을 제거 및 Module 관리"
+          "코드 리팩토링, Angular 공식문서에서 제안하는 개발 방법을 적용해 프론트엔드 기술 환경 개선",
+          "정기배송 신청 서비스 View 개발",
+          "lazy loading을 통한 초기 로딩속도 개선"
         ]
       },
       {
         title: "Admin Page 제작",
         date: "2018.10 ~ 2018.12",
-        subtitle:
-          "푸딩 웹사이트를 관리하기 위한 Admin Page 개발 및 유지보수를 담당했습니다. 기획안에 기능 외에는 따로 디자인이 없어 Angular Material을 이용하여 작업을 하였습니다. 완성 후 추가적인 개발 요청이 들어올 때마다 진행되었습니다.",
-        stack: ["Angular7", "Typescript", "Scss"],
-        youtube: "https://youtu.be/jQ1YNnLlUKs",
+        subtitle: `푸딩 웹사이트를 관리하기 위한 Admin Page 개발 및 유지보수를 담당했습니다.
+          기획안에 기능 외에는 따로 디자인이 없어 Angular Material을 이용하여 작업을 하였습니다. 완성 후 추가적인 개발 요청이 들어올 때마다 진행되었습니다.`,
+        stack: ["Angular7", "Sass"],
+        youtube: "https://www.youtube.com/embed/jeXTYYE-4JU",
         mywork: [
           "프론트엔드 개발환경 셋팅 및 전체기능 구현",
           "반응형으로 구현하여 데스크탑 및 테블릿 사용지원",
@@ -99,7 +99,7 @@ export const ExpList: Array<IExpList> = [
         subtitle:
           "모바일로 패키지 예약하는 고객을 위해 개발된 모바일 웹 입니다. 1차 개발 중반부터 참여를 시작하였으며, 풀스택 개발자 한분과 같이 작업하였습니다. 기존 기획안을 바탕으로 개발하면서 소셜 로그인을 통한 고객의 예약환경 향상을 건의 및 추가하였습니다.",
         link: "https://m.tourbell.co.kr",
-        stack: ["Ionic3", "Scss", "Typescript"],
+        stack: ["Ionic3", "Sass"],
         mywork: [
           "카카오, 네이버, 페이스북 소셜 로그인 연동을 제안, 개발을 하였습니다.",
           "회원가입 및 비밀번호 변경, 마이페이지, 쿠폰 페이지, 기획전, 이벤트 페이지 개발",
@@ -129,7 +129,7 @@ export const Prev: Array<Skill> = [
 ];
 
 export const Support: Array<Skill> = [
-  { name: "Slack", url: "/assets/Slack.jpg" },
+  { name: "Slack", url: "/assets/slack.jpg" },
   { name: "notion", url: "/assets/notion.jpg" },
   { name: "PostMan", url: "/assets/postman.png" },
   { name: "zeplin", url: "/assets/zeplin.jpg" },
