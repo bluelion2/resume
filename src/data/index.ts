@@ -114,11 +114,11 @@ export const Current: Array<Skill> = [
   { name: "Javascript", url: "/assets/js.png" },
   { name: "Typescript", url: "/assets/ts.png" },
   { name: "CSS", url: "/assets/css.png" },
+  { name: "Styled Component", url: "/assets/styled.png" },
+  { name: "Sass", url: "/assets/sass.png" },
   { name: "React", url: "/assets/react.png" },
   { name: "Angular", url: "/assets/angular.png" },
-  { name: "Mobx", url: "/assets/mobx.jpeg" },
-  { name: "Styled Component", url: "/assets/styled.png" },
-  { name: "Sass", url: "/assets/sass.png" }
+  { name: "Mobx", url: "/assets/mobx.jpeg" }
 ];
 
 export const Prev: Array<Skill> = [
