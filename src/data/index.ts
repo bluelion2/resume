@@ -125,7 +125,9 @@ export const Prev: Array<Skill> = [
   { name: "Redux", url: "/assets/Redux.png" },
   { name: "Rxjs", url: "/assets/rxjs.png" },
   { name: "Cypress", url: "/assets/cypress.jpeg" },
-  { name: "Jest", url: "/assets/jest.png" }
+  { name: "Jest", url: "/assets/jest.png" },
+  { name: "StoryBook", url: "/assets/storybook.png" },
+  { name: "Figma", url: "/assets/figma.png" }
 ];
 
 export const Support: Array<Skill> = [
@@ -134,5 +136,6 @@ export const Support: Array<Skill> = [
   { name: "PostMan", url: "/assets/postman.png" },
   { name: "zeplin", url: "/assets/zeplin.jpg" },
   { name: "Source tree", url: "/assets/sourcetree.png" },
-  { name: "Google Lighthouse", url: "/assets/lighthouse.jpeg" }
+  { name: "Google Lighthouse", url: "/assets/lighthouse.jpeg" },
+  { name: "Eslint", url: "/assets/eslint.jpg" }
 ];
