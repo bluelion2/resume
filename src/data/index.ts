@@ -108,10 +108,10 @@ export const ExpList: Array<IExpList> = [
   }
 ];
 export const Current: Array<Skill> = [
-  { name: "HTML", url: "/assets/html.png" },
+  { name: "HTML5", url: "/assets/html.png" },
   { name: "Javascript", url: "/assets/js.png" },
   { name: "Typescript", url: "/assets/ts.png" },
-  { name: "CSS", url: "/assets/css.png" },
+  { name: "CSS3", url: "/assets/css.png" },
   { name: "Styled Component", url: "/assets/styled.png" },
   { name: "Sass", url: "/assets/sass.png" },
   { name: "React", url: "/assets/react.png" },
