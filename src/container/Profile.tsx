@@ -68,7 +68,7 @@ export const Profile = (): JSX.Element => (
       <a
         target="_blank"
         download
-        href="https://drive.google.com/open?id=1MfNFH21IEo9e5L58oztAH5-ENsks9X0F"
+        href="https://drive.google.com/file/d/1ZtbuVMRIf7FBSr_3ewPZudIlf3IYpGJl/view?usp=sharing"
       >
         <img src="/assets/download.png" alt="download-icon"></img>
       </a>
