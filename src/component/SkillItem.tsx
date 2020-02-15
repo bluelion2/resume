@@ -5,9 +5,12 @@ import { TABLET, MOBILE } from "../types";
 const SkillItemBox = styled.div`
   flex: 0 0 150px;
   margin-bottom: 24px;
-
   &:not(:last-child) {
     margin-right: 24px;
+  }
+  &:nth-child(6n) {
+    flex: 1;
+    margin-right: 0;
   }
 
   ${TABLET} {

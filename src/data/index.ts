@@ -11,9 +11,8 @@ export const ExpList: Array<IExpList> = [
     project: [
       {
         title: "웹 매쓰플랫 개발 및 유지보수",
-        date: "2019.08 ~ ",
+        date: "2019.08 ~ 진행중",
         subtitle: `안드로이드 태블릿앱 '매쓰플렛'과 같은 기능을 웹에서 지원하기 위한 프로젝트를 진행하고 있습니다. 핵심 기능을 도맡아 개발하고, 먼저 개발된 기능의 유지보수와 코드 리팩토링을 하고 있습니다.`,
-        link: "https://my.mathflat.com",
         stack: ["React", "Mobx", "Redux", "Sass", "Typescript"],
         mywork: [
           "Redux thunk 상태관리를 Mobx로 변경 (Mobx4)",
@@ -58,7 +57,7 @@ export const ExpList: Array<IExpList> = [
         title: "Fooding 개발 및 유지보수",
         date: "2018.10 ~ 2019.08",
         subtitle:
-          "외주로 부터 개발된 fooding.io 를 인계받아 개선하는 작업을 진행하였습니다. 요청에 따라 사이트 내 정기배송 소개페이지 등 추가 개발도 진행하였습니다. 이와 관련해서 개선하기 위한 경험을 간단한 발표로 해보았습니다.",
+          "외주로 부터 개발된 fooding.io 를 인계받아 개선하는 작업을 진행하였습니다. 요청에 따라 사이트 내 정기배송 소개페이지 등 추가 개발도 진행하였습니다. 이와 관련해서 개선하기 위한 경험을 간단히 이야기 해보았습니다.",
         link:
           "https://drive.google.com/open?id=1TQQJSFa6Em6CX0D9NRdAxvY2dRxQQ6K_",
         youtube: "https://www.youtube.com/embed/jQ1YNnLlUKs",

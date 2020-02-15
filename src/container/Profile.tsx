@@ -66,6 +66,7 @@ export const Profile = (): JSX.Element => (
     <PDFBox>
       PDF로 다운로드하기
       <a
+        target="_blank"
         download
         href="https://drive.google.com/open?id=1MfNFH21IEo9e5L58oztAH5-ENsks9X0F"
       >

@@ -1,21 +1,21 @@
-
 html {
   background-color: #333;
   color: white;
-  font-family: 'Noto Sans KR', sans-serif;
-  body {
-    margin: unset;
-    position: relative;
-  }
+  font-family: "Noto Sans KR", sans-serif;
+}
+body {
+  margin: unset;
+  position: relative;
 }
 
-h2, h3, h4 {
+h2,
+h3,
+h4 {
   padding: 10px 0;
   border-bottom: 1px solid lightgray;
 }
 
 p {
-  font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
   color: white;
@@ -23,13 +23,20 @@ p {
   padding: unset;
   margin: unset;
 }
-
 iframe {
   width: 100%;
   border-width: unset;
   border-style: unset;
   height: 300px;
-  @media screen and (max-width: 400px) {
+}
+a {
+  color: black;
+}
+@media screen and (max-width: 400px) {
+  iframe {
     height: 180px;
+  }
+  html {
+    font-size: 14px;
   }
 }

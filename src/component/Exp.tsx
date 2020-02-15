@@ -2,12 +2,12 @@ import React from "react";
 import styled from "styled-components";
 import { Project } from "./Project";
 import { TABLET, MOBILE } from "../types";
-import { IExpList } from "../interface/interface";
+import { IExpList, IProject } from "../interface/interface";
 
 const ExpBox = styled.div`
   padding: 5%;
   border: 1px solid lightgray;
-  margin: 5vh 0;
+  margin: 2vh 0;
   p {
     color: black;
     margin-bottom: 10px;
@@ -18,7 +18,7 @@ const ExpBox = styled.div`
   }
 `;
 
-const ProjectList = styled.ul`
+const ProjectList = styled.ol`
   list-style: none;
   ${TABLET} {
     list-style: none;
@@ -41,7 +41,7 @@ export const Exp = (props: { career: IExpList }): JSX.Element => {
       <p>{career.subtitle}</p>
       <h4>주요 업무 내용</h4>
       <ProjectList>
-        {career.project.map((item: any) => (
+        {career.project.map((item: IProject["project"]) => (
           <Project key={item.title} project={item} />
         ))}
       </ProjectList>
