@@ -62,11 +62,11 @@ const Item = styled.div`
   }
 `;
 
-export const SkillItem = (props: { name: string; url: string }) => (
+export const SkillItem = ({ name, url }: { name: string; url: string }) => (
   <SkillItemBox>
     <Item>
-      <img src={props.url} alt={props.name} />
+      <img src={url} alt={name} />
     </Item>
-    <span>{props.name}</span>
+    <span>{name}</span>
   </SkillItemBox>
 );

@@ -6,7 +6,7 @@ import { Current, Prev, Support } from "../data";
 import { StoreContext } from "../store";
 
 const Skill = [
-  { title: "주로 사용한 기술입니다.", list: Current },
+  { title: "Skill", list: Current },
   { title: "최근 관심이 있거나, 사용한 경험이 있는 기술입니다.", list: Prev },
   { title: "Support Tools", list: Support }
 ];

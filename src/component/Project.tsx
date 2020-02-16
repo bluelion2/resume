@@ -102,14 +102,14 @@ export const Project = ({
         ) : null}
       </p>
       <StackList>
-        {!view ? (
-          project.stack.map((item: string) => <Stack key={item}>{item}</Stack>)
-        ) : (
+        {view ? (
           <ul>
             {project.stack.map((item: string) => (
               <li key={item}>{item}</li>
             ))}
           </ul>
+        ) : (
+          project.stack.map((item: string) => <Stack key={item}>{item}</Stack>)
         )}
       </StackList>
       <h4>My Work</h4>

@@ -40,7 +40,7 @@ export const ExpList: Array<IExpList> = [
           "정기배송 서비스를 이용하는 고객들을 대상으로 메뉴를 안내하는 앱 개발을 진행하였습니다. 아이오닉 보다 좋은 성능과, 빠른 개발이라는 목적을 달성하기 위해 React Native를 이용해 개발을 진행하였습니다. 내부 사정으로 인해 프로젝트가 중단되었습니다.",
         link: "",
         stack: ["React native", "Typescript", "Mobx"],
-        mywork: ["Mobx를 이용한 스토어관리", "모바일 앱 퍼블리싱"]
+        mywork: ["Mobx를 이용한 상태관리", "모바일 앱 퍼블리싱"]
       },
       {
         title: "Fooding Delivery App 개발",
@@ -123,8 +123,12 @@ export const details = {
   ],
   css: ["Sass, css-in-js (styled-component) 등 다양한 기법들을 좋아합니다."],
   js: [
-    "ES5, ES2015 문법에 익숙하고, 최신 문법에 관심을 가지고 있습니다.",
+    "ES5, ES6 문법에 익숙하고, 최신 문법에 관심을 가지고 있습니다.",
     "타입스크립트에 관심을 갖고 주로 사용하려고 합니다."
+  ],
+  react: [
+    "Mobx, Redux를 이용해 상태관리를 할 수 있습니다.",
+    "불필요한 렌더링을 최소화 하기위해 노력합니다."
   ],
   angular: [
     "공식 문서에서 지향하는 가이드를 지키려고 합니다.",
@@ -133,16 +137,16 @@ export const details = {
 };
 
 export const Current: Array<Skill> = [
-  { name: "HTML5", url: "/assets/html.png", detail: details["html"] },
+  { name: "HTML", url: "/assets/html.png", detail: details["html"] },
   { name: "Javascript", url: "/assets/js.png", detail: details["js"] },
   { name: "Typescript", url: "/assets/ts.png" },
-  { name: "CSS3", url: "/assets/css.png", detail: details["css"] },
+  { name: "CSS", url: "/assets/css.png", detail: details["css"] },
   {
     name: "Styled Component",
     url: "/assets/styled.png"
   },
   { name: "Sass", url: "/assets/sass.png" },
-  { name: "React", url: "/assets/react.png" },
+  { name: "React", url: "/assets/react.png", detail: details["react"] },
   { name: "Angular", url: "/assets/angular.png", detail: details["angular"] },
   { name: "Mobx", url: "/assets/mobx.jpeg" }
 ];
