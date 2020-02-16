@@ -8,22 +8,10 @@ const ProfileBox = styled.section`
   color: black;
 `;
 
-const PDFBox = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  img {
-    width: 30px;
-  }
-`;
-
 const ProfileInfo = styled.div`
   display: flex;
   align-items: center;
 
-  p {
-    color: black;
-  }
   img {
     flex: 0 0 120px;
     width: 120px;
@@ -40,21 +28,17 @@ const ProfileInfo = styled.div`
 
 export const Profile = (): JSX.Element => (
   <ProfileBox>
-    <h2>Profile</h2>
+    <h1>
+      반갑습니다. <br /> 프론트엔드 엔지니어 강승훈입니다.
+    </h1>
     <ProfileInfo>
       <img src="./assets/profile.jpeg" alt="본인 사진입니다." />
       <p>
-        반갑습니다. 프론트엔드 엔지니어 강승훈입니다. 패스트캠퍼스에서 처음
-        프론트엔드 개발을 시작하면서, HTML, CSS, JS를 공부하였고, Angular를
-        이용한 프로젝트를 진행하였습니다. 현재 서울에서 웹 프론트엔드 엔지니어로
-        일하고 있습니다.
-        <br />
-        <br />
         저의 지향점은, 사용자를 생각하는 개발자가 되고자 하는 것 입니다. 개발할
         때, 사용자가 어떻게 사용할 지에 대해서 한번 더 생각하고, 기획에 없더라도
         저의 의견을 제시해, 보다 더 사용하기 편리한 방향으로 개발하고자 합니다.
-        또한 협업하는 개발자와 함께 작성한 코드를 공유하면서, 어떻게 하면 더
-        깔끔한 코드가 될 수 있을지 생각하고자 합니다.
+        협업하는 개발자와 함께 작성한 코드를 보면서, 어떻게 하면 더 좋은 코드가
+        될 수 있을지 공유하고자 합니다.
         <br />
         <br />
         또한 다른 엔지니어 뿐만 아니라 비개발자 동료들과의 원활한 협업을 위해
@@ -63,15 +47,5 @@ export const Profile = (): JSX.Element => (
         참여하고 아이디어를 제시할 수 있는 환경을 선호합니다.
       </p>
     </ProfileInfo>
-    <PDFBox>
-      PDF로 다운로드하기
-      <a
-        target="_blank"
-        download
-        href="https://drive.google.com/file/d/1ZtbuVMRIf7FBSr_3ewPZudIlf3IYpGJl/view?usp=sharing"
-      >
-        <img src="/assets/download.png" alt="download-icon"></img>
-      </a>
-    </PDFBox>
   </ProfileBox>
 );

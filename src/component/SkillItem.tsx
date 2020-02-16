@@ -39,7 +39,6 @@ const SkillItemBox = styled.div`
     text-align: center;
     margin-top: 5px;
     font-size: 1rem;
-    color: white;
   }
 `;
 
@@ -47,11 +46,10 @@ const Item = styled.div`
   height: 150px;
   border-radius: 5px;
   border: solid 1px #eaeaea;
-  background-color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
-
+  cursor: pointer;
   img {
     width: 120px;
     height: 80px;

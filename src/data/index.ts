@@ -1,5 +1,5 @@
-import { Skill } from "../interface/interface";
-import { IExpList } from "../interface/interface";
+import { Skill } from "../interface/type";
+import { IExpList } from "../interface/type";
 
 export const ExpList: Array<IExpList> = [
   {
@@ -12,6 +12,7 @@ export const ExpList: Array<IExpList> = [
       {
         title: "웹 매쓰플랫 개발 및 유지보수",
         date: "2019.08 ~ 진행중",
+        worker: 4,
         subtitle: `안드로이드 태블릿앱 '매쓰플렛'과 같은 기능을 웹에서 지원하기 위한 팀프로젝트를 진행하고 있습니다. 기존 1차 개발 중반에 참가를 하여 현재까지 진행중이며, 핵심 기능을 도맡아 개발하고, 먼저 개발된 기능의 코드 리팩토링을 하고 있습니다.`,
         stack: ["React", "Mobx", "Redux", "Sass", "Typescript"],
         mywork: [
@@ -34,8 +35,9 @@ export const ExpList: Array<IExpList> = [
       {
         title: "Fooding Menu App 개발",
         date: "2019.07 ~ 2019.07",
+        worker: 1,
         subtitle:
-          "정기배송 서비스를 이용하는 고객들을 대상으로 메뉴를 안내하는 앱 개발을 진행하였습니다. 네이티브와 비슷한 성능과, 빠른 개발이라는 목적을 달성하기 위해 React Native를 이용해 개발을 진행하였습니다. 내부 사정으로 인해 프로젝트가 중단되었습니다.",
+          "정기배송 서비스를 이용하는 고객들을 대상으로 메뉴를 안내하는 앱 개발을 진행하였습니다. 아이오닉 보다 좋은 성능과, 빠른 개발이라는 목적을 달성하기 위해 React Native를 이용해 개발을 진행하였습니다. 내부 사정으로 인해 프로젝트가 중단되었습니다.",
         link: "",
         stack: ["React native", "Typescript", "Mobx"],
         mywork: ["Mobx를 이용한 스토어관리", "모바일 앱 퍼블리싱"]
@@ -43,6 +45,7 @@ export const ExpList: Array<IExpList> = [
       {
         title: "Fooding Delivery App 개발",
         date: "2019.02 ~ 2019.03",
+        worker: 2,
         subtitle:
           "배송 서비스를 원활하게 진행하기 위해 내부 배송기사용 앱을 개발했습니다. 많은 기능이 필요하지 않고, 빠른 시간 내에 개발해야 했기 때문에, Ionic4로 전체 개발을 하였습니다.",
         link:
@@ -57,6 +60,7 @@ export const ExpList: Array<IExpList> = [
       {
         title: "Fooding 개발 및 유지보수",
         date: "2018.10 ~ 2019.08",
+        worker: 1,
         subtitle:
           "외주로 부터 개발된 fooding.io 를 인계받아 개선하는 작업을 진행하였습니다. 요청에 따라 사이트 내 정기배송 소개페이지 등 추가 개발도 진행하였습니다. 이와 관련해서 개선하기 위한 경험을 간단히 이야기 해보았습니다.",
         link:
@@ -73,6 +77,7 @@ export const ExpList: Array<IExpList> = [
       {
         title: "Admin Page 제작",
         date: "2018.10 ~ 2018.12",
+        worker: 1,
         subtitle: `푸딩 웹사이트를 관리하기 위한 Admin Page 개발 및 유지보수를 담당했습니다.
           기획안에 기능 외에는 따로 디자인이 없어 Angular Material을 이용하여 작업을 하였습니다. 완성 후 추가적인 개발 요청이 들어올 때마다 진행되었습니다.`,
         stack: ["Angular7", "Sass"],
@@ -95,6 +100,7 @@ export const ExpList: Array<IExpList> = [
       {
         title: "Tourbell 모바일 웹 개발",
         date: "2018.07 ~ 2018.09",
+        worker: 2,
         subtitle:
           "모바일로 패키지 예약하는 고객을 위해 개발된 모바일 웹 입니다. 1차 개발 중반부터 참여를 시작하였으며, 풀스택 개발자 한분과 같이 작업하였습니다. 기존 기획안을 바탕으로 개발하면서 일부 개선방안을 제안하거나, 소셜 로그인을 도입을 건의 및 추가하였습니다.",
         link: "https://m.tourbell.co.kr",
@@ -108,15 +114,36 @@ export const ExpList: Array<IExpList> = [
     ]
   }
 ];
+
+export const details = {
+  html: [
+    "웹 표준을 지키려 노력합니다.",
+    "시멘틱 마크업을 생각합니다.",
+    "다양한 브라우저를 지원할 수 있게 노력합니다."
+  ],
+  css: ["Sass, css-in-js (styled-component) 등 다양한 기법들을 좋아합니다."],
+  js: [
+    "ES5, ES2015 문법에 익숙하고, 최신 문법에 관심을 가지고 있습니다.",
+    "타입스크립트에 관심을 갖고 주로 사용하려고 합니다."
+  ],
+  angular: [
+    "공식 문서에서 지향하는 가이드를 지키려고 합니다.",
+    "SPA에 대해 이해하고 있습니다."
+  ]
+};
+
 export const Current: Array<Skill> = [
-  { name: "HTML5", url: "/assets/html.png" },
-  { name: "Javascript", url: "/assets/js.png" },
+  { name: "HTML5", url: "/assets/html.png", detail: details["html"] },
+  { name: "Javascript", url: "/assets/js.png", detail: details["js"] },
   { name: "Typescript", url: "/assets/ts.png" },
-  { name: "CSS3", url: "/assets/css.png" },
-  { name: "Styled Component", url: "/assets/styled.png" },
+  { name: "CSS3", url: "/assets/css.png", detail: details["css"] },
+  {
+    name: "Styled Component",
+    url: "/assets/styled.png"
+  },
   { name: "Sass", url: "/assets/sass.png" },
   { name: "React", url: "/assets/react.png" },
-  { name: "Angular", url: "/assets/angular.png" },
+  { name: "Angular", url: "/assets/angular.png", detail: details["angular"] },
   { name: "Mobx", url: "/assets/mobx.jpeg" }
 ];
 

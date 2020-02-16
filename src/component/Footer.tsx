@@ -1,38 +1,52 @@
-import React from "react";
+import React, { useContext } from "react";
 import styled from "styled-components";
-import { MOBILE } from "../types";
+import { StoreContext } from "../store";
 
 const FooterBox = styled.footer`
-  margin-top: 5vh;
-  font-size: 1.2rem;
   background-color: #f0f0f0;
-  color: black;
   padding: 5%;
-  h1 {
-    margin: unset;
-  }
-  ${MOBILE} {
-    font-size: 0.9rem;
+  a {
+    color: black;
   }
 `;
 
-export const Footer = (): JSX.Element => (
-  <FooterBox>
-    <h1>Contact</h1>
-    <ul>
-      <li>
-        <a target="_blank" href="https://github.com/bluelion2">
-          Github
-        </a>
-      </li>
-      <li>
-        <a href="mailto:iltk2000@gmail.com">이메일</a>
-      </li>
-      <li>
-        <a target="_blank" href="https://www.facebook.com/Hun89">
-          페이스북
-        </a>
-      </li>
-    </ul>
-  </FooterBox>
-);
+const UlBox = styled.footer`
+  ul {
+    list-style: none;
+    margin-right: 50px;
+    text-align: end;
+  }
+`;
+
+export const Footer = (): JSX.Element | null => {
+  const { view }: any = useContext(StoreContext);
+  if (view[0])
+    return (
+      <UlBox>
+        <ul>
+          <li>Github: https://github.com/bluelion2</li>
+          <li>Mail: iltk2000@gmail.com</li>
+        </ul>
+      </UlBox>
+    );
+  return (
+    <FooterBox>
+      <h2>Contact</h2>
+      <ul>
+        <li>
+          <a target="_blank" href="https://github.com/bluelion2">
+            Github
+          </a>
+        </li>
+        <li>
+          <a href="mailto:iltk2000@gmail.com">이메일</a>
+        </li>
+        <li>
+          <a target="_blank" href="https://www.facebook.com/Hun89">
+            페이스북
+          </a>
+        </li>
+      </ul>
+    </FooterBox>
+  );
+};

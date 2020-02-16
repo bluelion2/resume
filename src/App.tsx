@@ -1,11 +1,13 @@
 import React from "react";
-import { Main } from "./container";
-import { Footer, Header } from "./component";
+import { Main, Profile } from "./container";
+import { Footer } from "./component";
+import Switch from "./component/Switch";
 
 const App = (): JSX.Element => {
   return (
     <>
-      <Header />
+      <Switch />
+      <Profile />
       <Main />
       <Footer />
     </>

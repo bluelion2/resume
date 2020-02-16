@@ -1,19 +1,19 @@
-import React from "react";
+import React, { useContext } from "react";
 import styled from "styled-components";
 import { Project } from "./Project";
 import { TABLET, MOBILE } from "../types";
-import { IExpList, IProject } from "../interface/interface";
+import { IExpList, IProject } from "../interface/type";
+import { StoreContext } from "../store";
 
 const ExpBox = styled.div`
-  padding: 5%;
+  padding: 5% 10%;
   border: 1px solid lightgray;
   margin: 2vh 0;
   p {
-    color: black;
     margin-bottom: 10px;
     margin-left: 38px;
     ${MOBILE} {
-      margin-left: none;
+      margin-left: 0;
     }
   }
 `;
@@ -33,6 +33,8 @@ const Icon = styled.img`
 
 export const Exp = (props: { career: IExpList }): JSX.Element => {
   const { career } = props;
+  const { view }: any = useContext(StoreContext);
+
   return (
     <ExpBox>
       <Icon src={career.icon} alt={career.name} />
@@ -42,7 +44,7 @@ export const Exp = (props: { career: IExpList }): JSX.Element => {
       <h4>주요 업무 내용</h4>
       <ProjectList>
         {career.project.map((item: IProject["project"]) => (
-          <Project key={item.title} project={item} />
+          <Project key={item.title} project={item} view={view[0]} />
         ))}
       </ProjectList>
     </ExpBox>

@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { TABLET, MOBILE } from "../types";
-import { IProject } from "../interface/interface";
+import { IProject } from "../interface/type";
 import { Icon } from "antd";
 
 const ProjectItem = styled.li`
@@ -38,8 +38,17 @@ const ProjectItem = styled.li`
     }
   }
   a {
-    display: inline-flex;
     margin-left: 5px;
+  }
+
+  iframe {
+    width: 100%;
+    border-width: unset;
+    border-style: unset;
+    height: 300px;
+    ${MOBILE} {
+      height: 180px;
+    }
   }
 `;
 
@@ -57,8 +66,8 @@ const StackList = styled.div`
 `;
 
 const Stack = styled.span`
-  background-color: lightgray;
-  color: #6c757d;
+  background-color: skyblue;
+  color: white;
   margin: 0 10px 10px 0;
   padding: 10px;
   border-radius: 10px;
@@ -71,8 +80,13 @@ const Stack = styled.span`
   }
 `;
 
-export const Project = (props: IProject): JSX.Element => {
-  const { project } = props;
+export const Project = ({
+  project,
+  view
+}: {
+  project: IProject["project"];
+  view: boolean;
+}): JSX.Element => {
   return (
     <ProjectItem>
       <h4>
@@ -81,24 +95,31 @@ export const Project = (props: IProject): JSX.Element => {
       </h4>
       <p>
         {project.subtitle}
-        {project.link ? (
+        {!view && project.link ? (
           <a target="_blank" href={project.link}>
             <Icon type="arrow-right" />
-            보러가기
           </a>
         ) : null}
       </p>
       <StackList>
-        {project.stack.map((item: string) => (
-          <Stack key={item}>{item}</Stack>
-        ))}
+        {!view ? (
+          project.stack.map((item: string) => <Stack key={item}>{item}</Stack>)
+        ) : (
+          <ul>
+            {project.stack.map((item: string) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
+        )}
       </StackList>
       <h4>My Work</h4>
       <ul>
         {project.mywork.map((work: string) => (
           <MyWork key={work}>{work}</MyWork>
         ))}
-        {project.youtube ? <iframe src={project.youtube}></iframe> : null}
+        {!view && project.youtube ? (
+          <iframe src={project.youtube}></iframe>
+        ) : null}
       </ul>
     </ProjectItem>
   );
