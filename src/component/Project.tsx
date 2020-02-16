@@ -52,10 +52,6 @@ const ProjectItem = styled.li`
   }
 `;
 
-const MyWork = styled.li`
-  margin: 10px 0;
-`;
-
 const StackList = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -116,7 +112,7 @@ export const Project = ({
       <h4>My Work</h4>
       <ul>
         {project.mywork.map((work: string) => (
-          <MyWork key={work}>{work}</MyWork>
+          <li key={work}>{work}</li>
         ))}
         {!view && project.youtube ? (
           <iframe src={project.youtube}></iframe>
