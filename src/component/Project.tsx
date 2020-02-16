@@ -63,6 +63,9 @@ const StackList = styled.div`
   ${MOBILE} {
     margin-left: none;
   }
+  span {
+    margin-right: 5px;
+  }
 `;
 
 const Stack = styled.span`
@@ -102,15 +105,13 @@ export const Project = ({
         ) : null}
       </p>
       <StackList>
-        {view ? (
-          <ul>
-            {project.stack.map((item: string) => (
-              <li key={item}>{item}</li>
+        {view
+          ? project.stack.map((item: string) => (
+              <span key={item}>{`${item}`}</span>
+            ))
+          : project.stack.map((item: string) => (
+              <Stack key={item}>{item}</Stack>
             ))}
-          </ul>
-        ) : (
-          project.stack.map((item: string) => <Stack key={item}>{item}</Stack>)
-        )}
       </StackList>
       <h4>My Work</h4>
       <ul>
