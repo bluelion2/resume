@@ -6,7 +6,7 @@ import { IExpList, IProject } from "../interface/type";
 import { StoreContext } from "../store";
 
 const ExpBox = styled.div`
-  padding: 5% 10%;
+  padding: 3% 10%;
   border: 1px solid lightgray;
   margin: 2vh 0;
   p {

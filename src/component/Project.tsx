@@ -55,6 +55,7 @@ const ProjectItem = styled.li`
 const StackList = styled.div`
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   margin-left: 35px;
   ${MOBILE} {
     margin-left: none;
@@ -67,7 +68,6 @@ const StackList = styled.div`
 const Stack = styled.span`
   background-color: skyblue;
   color: white;
-  margin: 0 10px 10px 0;
   padding: 10px;
   border-radius: 10px;
   :nth-child(1) {
@@ -101,6 +101,7 @@ export const Project = ({
         ) : null}
       </p>
       <StackList>
+        <span>Stack :</span>
         {view
           ? project.stack.map((item: string) => (
               <span key={item}>{`${item}`}</span>
