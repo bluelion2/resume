@@ -12,15 +12,6 @@ const ProfileInfo = styled.div`
   display: flex;
   align-items: center;
 
-  img {
-    flex: 0 0 120px;
-    width: 120px;
-    height: 120px;
-    border-radius: 60px;
-    margin: 0 20px 20px 0;
-    background-size: contain;
-  }
-
   ${TABLET} {
     flex-direction: column;
   }
@@ -32,7 +23,6 @@ export const Profile = (): JSX.Element => (
       반갑습니다. <br /> 프론트엔드 엔지니어 강승훈입니다.
     </h1>
     <ProfileInfo>
-      <img src="./assets/profile.jpeg" alt="본인 사진입니다." />
       <p>
         저의 지향점은, 사용자를 생각하는 개발자가 되고자 하는 것 입니다. 개발할
         때, 사용자가 어떻게 사용할 지에 대해서 한번 더 생각하고, 기획에 없더라도

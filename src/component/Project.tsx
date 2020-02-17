@@ -62,6 +62,7 @@ const StackList = styled.div`
   }
   span {
     margin-right: 5px;
+    margin-bottom: 5px;
   }
 `;
 
