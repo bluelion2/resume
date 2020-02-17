@@ -18,7 +18,6 @@ export const ExpList: Array<IExpList> = [
         mywork: [
           "Redux thunk 상태관리를 Mobx로 변경 (Mobx4)",
           "IE11부터 모던 브라우저 까지의 서비스 지원",
-          "핵심 기능중 하나인, 학생별 맞춤형 학습지, 교재를 관리하는 탭, '학습지 만들기' 개발",
           "코드 리팩토링을 통해 컴포넌트의 재사용성을 높이려 함",
           "서비스 정책과 기능 개발 히스토리 정리"
         ]
@@ -37,16 +36,16 @@ export const ExpList: Array<IExpList> = [
         date: "2019.05 ~ 2019.07",
         worker: 1,
         subtitle:
-          "정기배송 서비스를 이용하는 고객들을 대상으로 메뉴를 안내하는 앱 개발을 진행하였습니다. Ionic 보다 좋은 성능과, 네이티브 앱 개발보다 빠르게 출시하기 위해  React Native를 이용해 개발을 진행하였습니다. 내부 사정으로 인해 프로젝트가 중단되었습니다.",
+          "정기배송 서비스를 이용하는 고객들을 대상으로 메뉴를 안내하는 앱 개발을 진행하였습니다. Ionic 보다 좋은 성능과, IOS, 안드로이드를 한번에 개발할 수 있는  React Native를 이용해 개발을 진행하였습니다. 내부 사정으로 인해 프로젝트가 중단되었습니다.",
         stack: ["React native", "Typescript", "Mobx"],
-        mywork: ["Mobx를 이용한 상태관리", "모바일 앱 퍼블리싱"]
+        mywork: ["Mobx를 이용한 상태관리", "퍼블리싱 작업"]
       },
       {
         title: "Fooding Delivery App 개발",
         date: "2019.02 ~ 2019.03",
         worker: 2,
         subtitle:
-          "배송 서비스를 원활하게 진행하기 위해 내부 배송기사용 앱을 개발했습니다. 많은 기능이 필요하지 않고, 빠른 시간 내에 개발해야 했기 때문에, Ionic4로 전체 개발을 하였습니다.",
+          "배송 서비스를 원활하게 진행하기 위해 내부 배송기사용 앱을 개발했습니다. 많은 기능이 필요하지 않고, 빠른 시간 내에 개발해야 했기 때문에, Ionic4로 개발을 하였습니다.",
         link:
           "https://play.google.com/store/apps/details?id=app.fooding.delivery",
         youtube: "https://www.youtube.com/embed/_tYefWU1kzY",
@@ -68,9 +67,8 @@ export const ExpList: Array<IExpList> = [
         stack: ["Angular7", "Sass"],
         mywork: [
           "코드 리팩토링, Angular 공식문서에서 제안하는 개발 방법을 적용해 구조 개선",
-          "정기배송 신청 서비스 View 개발",
-          "Google Lighthouse를 이용한 성능 향상",
-          "lazy loading을 통한 초기 로딩속도 개선"
+          "정기배송 신청 서비스 페이지 퍼블리싱, 개발",
+          "초기 로딩속도 개선"
         ]
       },
       {
@@ -116,12 +114,11 @@ export const ExpList: Array<IExpList> = [
 
 export const details = {
   html: [
-    "웹 표준을 지키려 노력합니다.",
-    "시멘틱 마크업을 생각합니다.",
+    "시멘틱 마크업을 준수하기 위해 노력합니다.",
     "다양한 브라우저를 지원할 수 있게 노력합니다."
   ],
   css: [
-    "Sass, css-in-js (styled-component) 등 다양한 방법을 활용할 수 있습니다.",
+    "Sass, css-in-js (styled-component) 등의 방법을 활용할 수 있습니다.",
     "다양한 브라우저를 지원할 수 있게 노력합니다."
   ],
   js: [
