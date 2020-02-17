@@ -130,7 +130,7 @@ export const details = {
   ],
   react: [
     "React Hooks를 이용하고 주로 함수형 컴포넌트를 사용합니다.",
-    "Mobx, Redux를 이용해 상태관리를 할 수 있습니다.",
+    "Mobx를 이용해 상태관리를 할 수 있습니다.",
     "불필요한 렌더링을 최소화 하기위해 노력합니다."
   ],
   angular: [
