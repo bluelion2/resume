@@ -35,15 +35,25 @@ export const Footer = (): JSX.Element | null => {
       <h2>Contact</h2>
       <ul>
         <li>
-          <a target="_blank" href="https://github.com/bluelion2">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/bluelion2"
+          >
             Github
           </a>
         </li>
         <li>
-          <a href="mailto:iltk2000@gmail.com">이메일</a>
+          <a href="mailto:iltk2000@gmail.com" rel="noopener noreferrer">
+            이메일
+          </a>
         </li>
         <li>
-          <a target="_blank" href="https://www.facebook.com/Hun89">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.facebook.com/Hun89"
+          >
             페이스북
           </a>
         </li>

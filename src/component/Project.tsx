@@ -96,7 +96,7 @@ export const Project = ({
       <p>
         {project.subtitle}
         {!view && project.link ? (
-          <a target="_blank" href={project.link}>
+          <a target="_blank" rel="noopener noreferrer" href={project.link}>
             <Icon type="arrow-right" />
           </a>
         ) : null}
@@ -117,7 +117,7 @@ export const Project = ({
           <li key={work}>{work}</li>
         ))}
         {!view && project.youtube ? (
-          <iframe src={project.youtube}></iframe>
+          <iframe src={project.youtube} title="youtube"></iframe>
         ) : null}
       </ul>
     </ProjectItem>
