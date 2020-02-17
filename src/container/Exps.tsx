@@ -4,7 +4,7 @@ import { Exp } from "../component";
 import { ExpList } from "../data";
 import { TABLET } from "../types";
 
-export const ExpContainer: any = styled.section`
+export const ExpContainer = styled.section`
   width: 1024px;
   margin: 0 auto;
   ${TABLET} {
