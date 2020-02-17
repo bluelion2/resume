@@ -4,7 +4,7 @@ import { TABLET } from "../types";
 
 const ProfileBox = styled.header`
   width: 1024px;
-  margin: 0 auto;
+  margin: 3vh auto;
   ${TABLET} {
     width: 90%;
   }
