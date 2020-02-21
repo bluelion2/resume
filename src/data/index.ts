@@ -57,7 +57,7 @@ export const ExpList: Array<IExpList> = [
       },
       {
         title: "Fooding 개발 및 유지보수",
-        date: "2018.10 ~ 2019.08",
+        date: "2018.10 ~ 2019.07",
         worker: 1,
         subtitle:
           "외주로 부터 개발된 fooding.io 를 인계받아 개선하는 작업을 진행하였습니다. 요청에 따라 사이트 내 정기배송 소개페이지 등 추가 개발도 진행하였습니다. 이와 관련해서 개선하기 위한 경험을 간단히 이야기 해보았습니다.",
@@ -170,4 +170,14 @@ export const Support: Array<Skill> = [
   { name: "Source tree", url: "/assets/sourcetree.png" },
   { name: "Google Lighthouse", url: "/assets/lighthouse.jpeg" },
   { name: "Eslint", url: "/assets/eslint.jpg" }
+];
+
+export const Extra = [
+  { name: "방송통신대학교", date: "2018-02 ~ ", status: "재학중" },
+  {
+    name: "패스트캠퍼스 프론트엔드 스쿨 과정",
+    date: "2018-01 ~ 2018-04",
+    status: "수료"
+  },
+  { name: "한남대학교", date: "2008-02 ~ 2011.09", status: "중퇴" }
 ];

@@ -4,6 +4,7 @@ import { SkillList } from "../component";
 import { Exps } from "./Exps";
 import { Current, Prev, Support } from "../data";
 import { StoreContext } from "../store";
+import { Extras } from "./Extras";
 
 const Skill = [
   { title: "Skill", list: Current },
@@ -42,6 +43,7 @@ export const Main = (): JSX.Element => {
             ))}
           </div>
         )}
+        <Extras />
       </MainContainer>
     </>
   );
