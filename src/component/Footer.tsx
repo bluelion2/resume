@@ -24,9 +24,19 @@ export const Footer = (): JSX.Element | null => {
     return (
       <UlBox>
         <ul>
-          <li>Github: https://github.com/bluelion2</li>
-          <li>resume: https://resume.sh89.now.sh</li>
-          <li>Mail: iltk2000@gmail.com</li>
+          <li>
+            Github:{" "}
+            <a href="https://github.com/bluelion2">
+              https://github.com/bluelion2
+            </a>
+          </li>
+          <li>
+            resume:{" "}
+            <a href="https://resume.sh89.now.sh">https://resume.sh89.now.sh</a>
+          </li>
+          <li>
+            Mail: <a href="mailto:iltk2000@gmail.com">iltk2000@gmail.com</a>
+          </li>
         </ul>
       </UlBox>
     );
