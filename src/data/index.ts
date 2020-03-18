@@ -152,10 +152,9 @@ export const details = {
 };
 
 export const Current: Array<Skill> = [
-  { name: "HTML", url: "/assets/html.png", detail: details["html"] },
+  { name: "HTML & CSS", url: "/assets/html.png", detail: details["html"] },
   { name: "Javascript", url: "/assets/js.png", detail: details["js"] },
   { name: "Typescript", url: "/assets/ts.png" },
-  { name: "CSS", url: "/assets/css.png" },
   {
     name: "Styled Component",
     url: "/assets/styled.png"
