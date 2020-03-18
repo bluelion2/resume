@@ -18,8 +18,12 @@ export const ExpList: Array<IExpList> = [
         mywork: [
           "Redux thunk 상태관리를 Mobx로 변경 (Mobx4)",
           "IE11부터 모던 브라우저 까지의 서비스 지원",
-          "코드 리팩토링을 통해 컴포넌트의 재사용성을 높이려 함",
+          "코드 리팩토링을 통해 컴포넌트의 재사용성을 높이고, 레거시 코드 개선을 하려함",
           "서비스 정책과 기능 개발 히스토리 정리"
+        ],
+        memory: [
+          "진행중인 프로젝트에서, 레거시 코드의 개선과 기능 개발의 두마리 토끼를 잡는다는 것이 어렵다는 것을 느꼈습니다.",
+          "IE와, 성능이 낮은 컴퓨터(window7같은..)를 사용하는 고객이 많아 최적화를 염두해야 한다는 점을 생각하는 프로젝트였습니다."
         ]
       }
     ]
@@ -38,7 +42,11 @@ export const ExpList: Array<IExpList> = [
         subtitle:
           "정기배송 서비스를 이용하는 고객들을 대상으로 메뉴를 안내하는 앱 개발을 진행하였습니다. Ionic 보다 좋은 성능과, IOS, 안드로이드를 한번에 개발할 수 있는  React Native를 이용해 개발을 진행하였습니다. 내부 사정으로 인해 프로젝트가 중단되었습니다.",
         stack: ["React native", "Typescript", "Mobx"],
-        mywork: ["Mobx를 이용한 상태관리", "퍼블리싱 작업"]
+        mywork: ["Mobx를 이용한 상태관리", "퍼블리싱 작업"],
+        memory: [
+          "React를 조금 공부하고 시작했는데, Router 관리와 Native 쪽 문제 빼고는 크게 어렵지는 않았습니다. 중간에 프로젝트가 중단 된게 아쉬울 뿐입니다.",
+          "이 때부터 리액트에 대해 관심을 갖고 공부를 하기 시작했습니다. 둘 다 해보면서, 프론트엔드 프레임워크도 중요하지만 근본인 자바스크립트에 대해 공부의 필요성을 느끼게 되었습니다."
+        ]
       },
       {
         title: "Fooding Delivery App 개발",
@@ -53,6 +61,9 @@ export const ExpList: Array<IExpList> = [
         mywork: [
           "프론트엔드 개발환경 셋팅 및 전체 기능 구현과 구글 플레이스토어 배포",
           "안드로이드 태블릿 및 모바일에 맞게 개발"
+        ],
+        memory: [
+          "Angular와 Ionic을 해본 경험, 오래된 기술이다 보니 자료들을 찾는데 수월해서 쉽게 개발할 수 있었습니다. 성능이 많이 떨어질까봐 걱정했는데, 우려한 만큼의 나쁜성능은 아니였습니다."
         ]
       },
       {
@@ -60,7 +71,7 @@ export const ExpList: Array<IExpList> = [
         date: "2018.10 ~ 2019.07",
         worker: 1,
         subtitle:
-          "외주로 부터 개발된 fooding.io 를 인계받아 개선하는 작업을 진행하였습니다. 요청에 따라 사이트 내 정기배송 소개페이지 등 추가 개발도 진행하였습니다. 이와 관련해서 개선하기 위한 경험을 간단히 이야기 해보았습니다.",
+          "외주로 부터 개발된 fooding.io 를 인계받아 개선하는 작업을 진행하였습니다. 요청에 따라 사이트 내 정기배송 소개페이지 등 추가 개발도 진행하였습니다. 이와 관련해서 개선하기 위한 경험을 간단히 발표해 해보았습니다.",
         link:
           "https://drive.google.com/open?id=1TQQJSFa6Em6CX0D9NRdAxvY2dRxQQ6K_",
         youtube: "https://www.youtube.com/embed/jQ1YNnLlUKs",
@@ -69,6 +80,9 @@ export const ExpList: Array<IExpList> = [
           "코드 리팩토링, Angular 공식문서에서 제안하는 개발 방법을 적용해 구조 개선",
           "정기배송 신청 서비스 페이지 퍼블리싱, 개발",
           "초기 로딩속도 개선"
+        ],
+        memory: [
+          "'내가 짠 코드도 일주일 뒤에 까먹는데, 남이 짠 코드는 오죽하랴'는 말이 떠올랐습니다. 레거시 코드를 하나씩 뜯어보면서 개선해 나가는 보람을 느꼈습니다."
         ]
       },
       {
@@ -83,6 +97,10 @@ export const ExpList: Array<IExpList> = [
           "프론트엔드 개발환경 셋팅 및 전체기능 구현",
           "반응형으로 구현하여 데스크탑 및 테블릿 사용지원",
           "Chart.js를 이용한 주문 확인 차트와 Excel 변환지원"
+        ],
+        memory: [
+          "Angular Material같은 UI 라이브러리의 편리함을 잘 느낀 프로젝트였습니다.",
+          "HTMl과 CSS는 처음에는 쉽다 생각했는데, 하면 할수록 재미있지만 어렵다는 생각이 들었습니다."
         ]
       }
     ]
@@ -115,11 +133,8 @@ export const ExpList: Array<IExpList> = [
 export const details = {
   html: [
     "시멘틱 마크업을 준수하기 위해 노력합니다.",
-    "다양한 브라우저를 지원할 수 있게 노력합니다."
-  ],
-  css: [
-    "Sass, css-in-js (styled-component) 등의 방법을 활용할 수 있습니다.",
-    "다양한 브라우저를 지원할 수 있게 노력합니다."
+    "다양한 브라우저를 지원할 수 있게 노력합니다.",
+    "Sass, css-in-js (styled-component) 등의 방법을 활용할 수 있습니다."
   ],
   js: [
     "ES5, ES6 문법에 익숙하고, 최신 문법에 관심을 가지고 있습니다.",
@@ -140,7 +155,7 @@ export const Current: Array<Skill> = [
   { name: "HTML", url: "/assets/html.png", detail: details["html"] },
   { name: "Javascript", url: "/assets/js.png", detail: details["js"] },
   { name: "Typescript", url: "/assets/ts.png" },
-  { name: "CSS", url: "/assets/css.png", detail: details["css"] },
+  { name: "CSS", url: "/assets/css.png" },
   {
     name: "Styled Component",
     url: "/assets/styled.png"
@@ -173,11 +188,15 @@ export const Support: Array<Skill> = [
 ];
 
 export const Extra = [
-  { name: "방송통신대학교", date: "2018-02 ~ ", status: "재학중" },
+  {
+    name: "방송통신대학교",
+    date: "2018-02 ~ ",
+    status: "컴퓨터 과학과 재학중"
+  },
   {
     name: "패스트캠퍼스 프론트엔드 스쿨 과정",
     date: "2018-01 ~ 2018-04",
     status: "수료"
   },
-  { name: "한남대학교", date: "2008-02 ~ 2011.09", status: "중퇴" }
+  { name: "한남대학교", date: "2008-02 ~ 2011.09", status: "교육학과 중퇴" }
 ];

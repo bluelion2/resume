@@ -9,7 +9,8 @@ const ProjectItem = styled.li`
   margin: 20px 0;
   padding: 20px 0;
   border-bottom: 1px dotted lightgray;
-  h4 {
+  h4,
+  h5 {
     span {
       margin-left: 10px;
       font-weight: normal;
@@ -111,7 +112,7 @@ export const Project = ({
               <Stack key={item}>{item}</Stack>
             ))}
       </StackList>
-      <h4>My Work</h4>
+      <h5>My Work</h5>
       <ul>
         {project.mywork.map((work: string) => (
           <li key={work}>{work}</li>
@@ -120,6 +121,16 @@ export const Project = ({
           <iframe src={project.youtube} title="youtube"></iframe>
         ) : null}
       </ul>
+      {project.memory && (
+        <>
+          <h5>기억에 남는 점</h5>
+          <ul>
+            {project.memory.map(text => (
+              <li>{text}</li>
+            ))}
+          </ul>
+        </>
+      )}
     </ProjectItem>
   );
 };

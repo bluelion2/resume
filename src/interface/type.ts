@@ -11,6 +11,7 @@ export type Project = {
   subtitle: string;
   mywork: Array<string>;
   stack: Array<string>;
+  memory?: string[];
   youtube?: string;
   link?: string;
 };
