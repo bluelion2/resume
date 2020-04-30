@@ -38,7 +38,7 @@ export const ExpList: Array<IExpList> = [
   {
     name: "(주) 열두달",
     subtitle:
-      "단체음식을 배송 하는 Fooding의 프론트엔드 개발자로 근무를 하면서 쇼핑사이트 유지보수와 내부적으로 필요한 Admin Page, 배송기사용 앱을 백엔드 개발자 한분과 개발하였습니다.",
+      "단체음식을 배송 하는 Fooding의 프론트엔드 개발자로 근무를 하면서 쇼핑사이트 유지보수와 내부적으로 필요한 Admin Page, 배송기사용 앱을 개발하였습니다.",
     date: "2018.10 ~ 2019.07",
     icon: "/assets/fooding.png",
     project: [
