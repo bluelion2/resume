@@ -105,17 +105,17 @@ export const Project = ({
       <StackList>
         <span>Stack :</span>
         {view
-          ? project.stack.map((item: string) => (
-              <span key={item}>{`${item}`}</span>
+          ? project.stack.map((item: string, index) => (
+              <span key={`${index}-${item}`}>{`${item}`}</span>
             ))
-          : project.stack.map((item: string) => (
-              <Stack key={item}>{item}</Stack>
+          : project.stack.map((item: string, index) => (
+              <Stack key={`${item}-${index}`}>{item}</Stack>
             ))}
       </StackList>
       <h5>My Work</h5>
       <ul>
-        {project.mywork.map((work: string) => (
-          <li key={work}>{work}</li>
+        {project.mywork.map((work: string, index) => (
+          <li key={`${work}-${index}`}>{work}</li>
         ))}
         {!view && project.youtube ? (
           <iframe src={project.youtube} title="youtube"></iframe>
@@ -126,7 +126,7 @@ export const Project = ({
           <h5>기억에 남는 점</h5>
           <ul>
             {project.memory.map(text => (
-              <li>{text}</li>
+              <li key={text}>{text}</li>
             ))}
           </ul>
         </>

@@ -19,8 +19,10 @@ const UlBox = styled.footer`
 `;
 
 export const Footer = (): JSX.Element | null => {
-  const { view }: any = useContext(StoreContext);
-  if (view[0])
+  const {
+    view: { viewValue }
+  }: any = useContext(StoreContext);
+  if (viewValue)
     return (
       <UlBox>
         <ul>

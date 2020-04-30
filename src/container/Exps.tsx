@@ -16,8 +16,8 @@ export const Exps = (): JSX.Element => {
   return (
     <ExpContainer>
       <h2>Work Experience</h2>
-      {ExpList.map(exp => (
-        <Exp career={exp} key={exp.name} />
+      {ExpList.map((exp, index) => (
+        <Exp career={exp} key={`${exp.name}-${index}`} />
       ))}
     </ExpContainer>
   );

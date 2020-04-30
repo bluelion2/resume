@@ -33,9 +33,9 @@ export const SkillList = ({
       <List view={view}>
         {view
           ? list.map(
-              (item: Skill) =>
+              (item: Skill, index) =>
                 item.detail && (
-                  <ul key={item.name}>
+                  <ul key={`${item.name}-${index}`}>
                     {item.name}
                     {item.detail.map(text => (
                       <li key={text}>{text}</li>
@@ -43,8 +43,12 @@ export const SkillList = ({
                   </ul>
                 )
             )
-          : list.map((item: Skill) => (
-              <SkillItem name={item.name} url={item.url} key={item.name} />
+          : list.map((item: Skill, index) => (
+              <SkillItem
+                name={item.name}
+                url={item.url}
+                key={`${index}-${item.name}`}
+              />
             ))}
       </List>
     </SkillListSection>
