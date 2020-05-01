@@ -77,7 +77,7 @@ export const ExpList: Array<IExpList> = [
         ]
       },
       {
-        title: "Fooding 개발 및 유지보수",
+        title: "Fooding 웹서비스 개발 및 유지보수",
         date: "2018.10 ~ 2019.07",
         worker: 1,
         subtitle:
@@ -96,7 +96,7 @@ export const ExpList: Array<IExpList> = [
         ]
       },
       {
-        title: "Admin Page 제작",
+        title: "Fooding Admin 웹서비스 개발",
         date: "2018.10 ~ 2018.12",
         worker: 1,
         subtitle: `푸딩 웹사이트를 관리하기 위한 Admin Page 개발 및 유지보수를 담당했습니다. 기획안에 기능 외에는 따로 디자인을 준비하지 않아서 Angular Material을 이용하여 디자인을 하였습니다. 백엔드 개발자 한분과 같이 작업을 하였고, 완성 후 추가적인 개발 요청이 들어올 때마다 진행되었습니다.`,
@@ -123,7 +123,7 @@ export const ExpList: Array<IExpList> = [
     icon: "/assets/tourbell.png",
     project: [
       {
-        title: "Tourbell 모바일 웹 개발",
+        title: "Tourbell 모바일 웹 서비스 개발",
         date: "2018.07 ~ 2018.09",
         worker: 2,
         subtitle:
