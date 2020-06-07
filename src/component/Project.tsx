@@ -11,7 +11,7 @@ const ProjectItem = styled.li`
   border-bottom: 1px dotted lightgray;
   h4,
   h5 {
-    span {
+    small {
       margin-left: 10px;
       font-weight: normal;
       font-size: 14px;
@@ -58,7 +58,7 @@ const ProjectItem = styled.li`
   }
 `;
 
-const StackList = styled.div`
+const StackList = styled.article`
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -97,7 +97,7 @@ export const Project = ({
     <ProjectItem>
       <h4>
         {project.title}
-        <span>{project.date}</span>
+        <small>{project.date}</small>
       </h4>
       <p>
         {project.subtitle}
