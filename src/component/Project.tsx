@@ -51,6 +51,11 @@ const ProjectItem = styled.li`
       height: 180px;
     }
   }
+  p {
+    ${TABLET} {
+      margin-left: 0 !important;
+    }
+  }
 `;
 
 const StackList = styled.div`
@@ -58,12 +63,12 @@ const StackList = styled.div`
   flex-wrap: wrap;
   align-items: center;
   margin-left: 35px;
-  ${MOBILE} {
-    margin-left: none;
-  }
   span {
     margin-right: 5px;
     margin-bottom: 5px;
+  }
+  ${TABLET} {
+    margin-left: 0;
   }
 `;
 

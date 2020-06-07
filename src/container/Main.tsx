@@ -32,7 +32,7 @@ export const Main = (): JSX.Element => {
             view={view[0]}
           />
         ) : (
-          <div>
+          <section>
             {Skill.map((item, index) => (
               <SkillList
                 key={`skill-${index}`}
@@ -41,7 +41,7 @@ export const Main = (): JSX.Element => {
                 view={view[0]}
               />
             ))}
-          </div>
+          </section>
         )}
         <Extras />
       </MainContainer>
