@@ -20,7 +20,7 @@ const MainContainer = styled.main`
 `;
 
 export const Main = (): JSX.Element => {
-  const { view }: any = useContext(StoreContext);
+  const { view }: { view?: any } = useContext(StoreContext);
   return (
     <>
       <MainContainer>

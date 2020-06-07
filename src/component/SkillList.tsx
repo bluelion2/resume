@@ -12,10 +12,10 @@ const SkillListSection = styled.section`
   }
 `;
 
-const List: any = styled.div`
+const List = styled.div`
   display: flex;
   flex-wrap: wrap;
-  flex-direction: ${(props: any) => (props.view ? "column" : null)};
+  flex-direction: ${({ view }: { view: boolean }) => (view ? "column" : null)};
 `;
 
 export const SkillList = ({
