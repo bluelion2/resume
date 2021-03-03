@@ -1,8 +1,8 @@
-import React from "react";
-import styled from "styled-components";
-import { TABLET, MOBILE } from "../types";
-import { IProject } from "../interface/type";
-import { Icon } from "antd";
+import React from 'react'
+import styled from 'styled-components'
+import { TABLET, MOBILE } from '../types'
+import { IProject } from '../interface/type'
+import { Icon } from 'antd'
 
 const ProjectItem = styled.li`
   list-style: none;
@@ -56,7 +56,7 @@ const ProjectItem = styled.li`
       margin-left: 0 !important;
     }
   }
-`;
+`
 
 const StackList = styled.article`
   display: flex;
@@ -70,7 +70,7 @@ const StackList = styled.article`
   ${TABLET} {
     margin-left: 0;
   }
-`;
+`
 
 const Stack = styled.span`
   background-color: skyblue;
@@ -84,14 +84,18 @@ const Stack = styled.span`
     background-color: #222;
     color: white;
   }
-`;
+`
+
+const StackStr = styled.span`
+  border-bottom: 1px solid black;
+`
 
 export const Project = ({
   project,
-  view
+  view,
 }: {
-  project: IProject["project"];
-  view: boolean;
+  project: IProject['project']
+  view: boolean
 }): JSX.Element => {
   return (
     <ProjectItem>
@@ -110,32 +114,26 @@ export const Project = ({
       <StackList>
         <span>Stack :</span>
         {view
-          ? project.stack.map((item: string, index) => (
-              <span key={`${index}-${item}`}>{`${item}`}</span>
-            ))
-          : project.stack.map((item: string, index) => (
-              <Stack key={`${item}-${index}`}>{item}</Stack>
-            ))}
+          ? project.stack.map((item: string) => <StackStr key={item}>{item}</StackStr>)
+          : project.stack.map((item: string) => <Stack key={item}>{item}</Stack>)}
       </StackList>
       <h5>My Work</h5>
       <ul>
-        {project.mywork.map((work: string, index) => (
-          <li key={`${work}-${index}`}>{work}</li>
+        {project.mywork.map((work: string) => (
+          <li key={work}>{work}</li>
         ))}
-        {!view && project.youtube ? (
-          <iframe src={project.youtube} title="youtube"></iframe>
-        ) : null}
+        {!view && project.youtube ? <iframe src={project.youtube} title="youtube"></iframe> : null}
       </ul>
       {project.memory && (
         <>
           <h5>기억에 남는 점</h5>
           <ul>
-            {project.memory.map(text => (
+            {project.memory.map((text) => (
               <li key={text}>{text}</li>
             ))}
           </ul>
         </>
       )}
     </ProjectItem>
-  );
-};
+  )
+}

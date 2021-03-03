@@ -1,6 +1,6 @@
-import React from "react";
-import styled from "styled-components";
-import { TABLET, MOBILE } from "../types";
+import React from 'react'
+import styled from 'styled-components'
+import { TABLET, MOBILE } from '../types'
 
 const SkillItemBox = styled.div`
   flex: 0 0 150px;
@@ -40,7 +40,7 @@ const SkillItemBox = styled.div`
     margin-top: 5px;
     font-size: 1rem;
   }
-`;
+`
 
 const Item = styled.div`
   height: 150px;
@@ -60,7 +60,7 @@ const Item = styled.div`
       transform: scale(1.25);
     }
   }
-`;
+`
 
 export const SkillItem = ({ name, url }: { name: string; url: string }) => (
   <SkillItemBox>
@@ -69,4 +69,4 @@ export const SkillItem = ({ name, url }: { name: string; url: string }) => (
     </Item>
     <span>{name}</span>
   </SkillItemBox>
-);
+)

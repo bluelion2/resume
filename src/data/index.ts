@@ -13,7 +13,7 @@ export const ExpList: Array<IExpList> = [
         title: '매쓰플랫 신규 프로젝트 개발',
         date: '2020.07 ~ 진행중',
         worker: 4,
-        subtitle: `기존 웹 매쓰플랫`,
+        subtitle: `기존 웹 매쓰플랫의 디자인, DB설계등 여러 이슈로 인해 기존 서비스를 갈아엎고 새롭게 만드는 프로젝트 입니다.`,
         stack: ['React', 'Mobx', 'EmotionJS', 'Storybook', 'Typescript'],
         mywork: [
           '웹 매쓰플랫의 핵심기능인 학습지만들기와 교재만들기 기능 전체를 담당했습니다.',
@@ -46,19 +46,6 @@ export const ExpList: Array<IExpList> = [
     date: '2018.10 ~ 2019.07',
     icon: '/assets/fooding.png',
     project: [
-      // {
-      //   title: 'Fooding Menu App 개발',
-      //   date: '2019.05 ~ 2019.07',
-      //   worker: 1,
-      //   subtitle:
-      //     '정기배송 서비스를 이용하는 고객들을 대상으로 메뉴를 안내하는 앱 개발을 진행하였습니다. Ionic 보다 좋은 성능과, IOS, 안드로이드를 한번에 개발할 수 있는  React Native를 이용해 개발을 진행하였습니다. 내부 사정으로 인해 프로젝트가 중단되었습니다.',
-      //   stack: ['React native', 'Typescript', 'Mobx'],
-      //   mywork: ['Mobx를 이용한 상태관리', '퍼블리싱 작업'],
-      //   memory: [
-      //     'React를 조금 공부하고 시작했는데, Router 관리와 Native 쪽 문제 빼고는 크게 어렵지는 않았습니다. 중간에 프로젝트가 중단 된게 아쉬울 뿐입니다.',
-      //     '이 때부터 리액트에 대해 관심을 갖고 공부를 하기 시작했습니다. 둘 다 해보면서, 프론트엔드 프레임워크도 중요하지만 근본인 자바스크립트에 대해 공부의 필요성을 느끼게 되었습니다.',
-      //   ],
-      // },
       {
         title: 'Fooding Delivery App 개발',
         date: '2019.02 ~ 2019.03',
@@ -71,9 +58,6 @@ export const ExpList: Array<IExpList> = [
         mywork: [
           '프론트엔드 개발환경 셋팅 및 전체 기능 구현을 했습니다. 자동로그인, 주문의 상태에 따른 스텝 표시 및 이동, Routing 및 안드로이드 테블릿과 모바일에 맞게 구현하였습니다.',
         ],
-        // memory: [
-        //   'Angular와 Ionic을 해본 경험, 오래된 기술이다 보니 자료들을 찾는데 수월해서 쉽게 개발할 수 있었습니다. 성능이 많이 떨어질까봐 걱정했는데, 우려한 만큼의 나쁜성능은 아니였습니다.',
-        // ],
       },
       {
         title: 'Fooding 웹서비스 개발 및 유지보수',
@@ -85,13 +69,10 @@ export const ExpList: Array<IExpList> = [
         youtube: 'https://www.youtube.com/embed/jQ1YNnLlUKs',
         stack: ['Angular7', 'Sass'],
         mywork: [
-          '기존의 외주 코드들을 전부 리팩토링했습니다.  document.getElementsByClassName로 특정 class를 컨트롤 하거나, 기존에 컴포넌트에서 모든것을 처리하던 Angular 공식문서에서 제안하는 컴포넌트, 서비스 분리하는 방법으로 바꾸었습니다.',
+          '기존의 외주 코드들을 전부 리팩토링했습니다.  document.getElementsByClassName로 특정 class를 컨트롤 하거나, 하나의 컴포넌트에 모든것을 처리하던 구조를 Angular 공식문서에서 제안하는 컴포넌트, 서비스 분리하는 방법으로 바꾸었습니다.',
           '새롭게 추가된 정기배송 신청 서비스를 위한 페이지를 퍼블리싱 했습니다.',
           '초기 로딩속도가 느린점을 극복하기 위해 초기에 필요하지 않은 모듈 및 컴포넌트, 라이브러리들을 지연로딩하는 방법으로 개선하였습니다.',
         ],
-        // memory: [
-        //   "'내가 짠 코드도 일주일 뒤에 까먹는데, 남이 짠 코드는 오죽하랴'는 말이 떠올랐습니다. 중복되는 코드를 정리하고 레거시 코드를 하나씩 뜯어보면서 고통과, 개선해 나가는 보람을 느꼈습니다.",
-        // ],
       },
       {
         title: 'Fooding Admin 웹서비스 개발',
@@ -103,10 +84,6 @@ export const ExpList: Array<IExpList> = [
         mywork: [
           '프론트엔드 개발환경 셋팅, 그리고 데스크랍과 테블릿 반응형 작업등 전체 기능을 구현했습니다.',
         ],
-        // memory: [
-        //   'Angular Material같은 UI 라이브러리의 편리함을 잘 느낀 프로젝트였습니다.',
-        //   '데이터 시각화를 위한 첫 작업이였습니다. 데이터가 많지 않아 쉬웠지만, 점점 늘어난다면 필터, 순서 등 고려할 것이 많다고 생각이 들었습니다.',
-        // ],
       },
     ],
   },
@@ -134,7 +111,7 @@ export const details = {
   ],
 }
 
-export const Current: Array<Skill> = [
+export const Current: Skill[] = [
   { name: 'HTML & CSS', url: '/assets/html.png', detail: details['html'] },
   { name: 'Javascript', url: '/assets/js.png', detail: details['js'] },
   { name: 'Typescript', url: '/assets/ts.png' },
@@ -148,7 +125,7 @@ export const Current: Array<Skill> = [
   { name: 'Mobx', url: '/assets/mobx.jpeg' },
 ]
 
-export const Prev: Array<Skill> = [
+export const Prev: Skill[] = [
   { name: 'Ionic', url: '/assets/ionic.jpeg' },
   { name: 'Redux', url: '/assets/Redux.png' },
   { name: 'Rxjs', url: '/assets/rxjs.png' },
@@ -158,11 +135,6 @@ export const Prev: Array<Skill> = [
 ]
 
 export const Extra = [
-  // {
-  //   name: "방송통신대학교",
-  //   date: "2018-02 ~ ",
-  //   status: "컴퓨터 과학과 재학중"
-  // },
   {
     name: '패스트캠퍼스 프론트엔드 스쿨 과정',
     date: '2018-01 ~ 2018-04',

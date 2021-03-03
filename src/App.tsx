@@ -1,7 +1,7 @@
-import React from "react";
-import { Main, Profile } from "./container";
-import { Footer } from "./component";
-import Switch from "./component/Switch";
+import React from 'react'
+import { Main, Profile } from './container'
+import { Footer } from './component'
+import Switch from './component/Switch'
 
 const App = (): JSX.Element => {
   return (
@@ -11,7 +11,7 @@ const App = (): JSX.Element => {
       <Main />
       <Footer />
     </>
-  );
-};
+  )
+}
 
-export default App;
+export default App
