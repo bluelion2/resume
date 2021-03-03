@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { Project } from './Project'
 import { TABLET, MOBILE } from '../types'
 import { IExpList, IProject } from '../interface/type'
-import { StoreContext } from '../store'
+import { StoreContext, StoreValue } from '../store'
 
 const ExpBox = styled.div`
   margin: 2vh 0;
@@ -34,7 +34,9 @@ const Icon = styled.img`
 
 export const Exp = (props: { career: IExpList }): JSX.Element => {
   const { career } = props
-  const { view }: any = useContext(StoreContext)
+  const {
+    printStyle: [styleOption],
+  } = useContext<StoreValue>(StoreContext)
 
   return (
     <ExpBox>
@@ -45,7 +47,7 @@ export const Exp = (props: { career: IExpList }): JSX.Element => {
       <h4>주요 업무 내용</h4>
       <ProjectList>
         {career.project.map((item: IProject['project']) => (
-          <Project key={item.title} project={item} view={view[0]} />
+          <Project key={item.title} project={item} styleOption={styleOption} />
         ))}
       </ProjectList>
     </ExpBox>

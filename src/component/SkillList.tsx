@@ -15,23 +15,21 @@ const SkillListSection = styled.section`
 const List = styled.div`
   display: flex;
   flex-wrap: wrap;
-  flex-direction: ${({ view }: { view: boolean }) => (view ? 'column' : null)};
+  flex-direction: ${({ styleOption }: { styleOption: boolean }) => (styleOption ? 'column' : null)};
 `
 
-export const SkillList = ({
-  title,
-  list,
-  view,
-}: {
+type Props = {
   title: string
-  list: Array<Skill>
-  view: boolean
-}) => {
+  list: Skill[]
+  styleOption: boolean
+}
+
+export const SkillList = ({ title, list, styleOption }: Props) => {
   return (
     <SkillListSection>
       <h3>{title}</h3>
-      <List view={view}>
-        {view
+      <List styleOption={styleOption}>
+        {styleOption
           ? list.map(
               (item: Skill) =>
                 item.detail && (

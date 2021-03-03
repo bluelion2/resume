@@ -90,13 +90,12 @@ const StackStr = styled.span`
   border-bottom: 1px solid black;
 `
 
-export const Project = ({
-  project,
-  view,
-}: {
+type Props = {
   project: IProject['project']
-  view: boolean
-}): JSX.Element => {
+  styleOption: boolean
+}
+
+export const Project = ({ project, styleOption }: Props): JSX.Element => {
   return (
     <ProjectItem>
       <h4>
@@ -105,7 +104,7 @@ export const Project = ({
       </h4>
       <p>
         {project.subtitle}
-        {!view && project.link ? (
+        {!styleOption && project.link ? (
           <a target="_blank" rel="noopener noreferrer" href={project.link}>
             <Icon type="arrow-right" />
           </a>
@@ -113,7 +112,7 @@ export const Project = ({
       </p>
       <StackList>
         <span>Stack :</span>
-        {view
+        {styleOption
           ? project.stack.map((item: string) => <StackStr key={item}>{item}</StackStr>)
           : project.stack.map((item: string) => <Stack key={item}>{item}</Stack>)}
       </StackList>
@@ -122,7 +121,9 @@ export const Project = ({
         {project.mywork.map((work: string) => (
           <li key={work}>{work}</li>
         ))}
-        {!view && project.youtube ? <iframe src={project.youtube} title="youtube"></iframe> : null}
+        {!styleOption && project.youtube ? (
+          <iframe src={project.youtube} title="youtube"></iframe>
+        ) : null}
       </ul>
       {project.memory && (
         <>

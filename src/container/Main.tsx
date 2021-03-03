@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { SkillList } from '../component'
 import { Exps } from './Exps'
 import { Current, Prev } from '../data'
-import { StoreContext } from '../store'
+import { StoreContext, StoreValue } from '../store'
 import { Extras } from './Extras'
 
 const Skill = [
@@ -19,11 +19,15 @@ const MainContainer = styled.main`
 `
 
 export const Main = (): JSX.Element => {
-  const { view }: { view?: any } = useContext(StoreContext)
+  const {
+    printStyle: [styleOption],
+  } = useContext<StoreValue>(StoreContext)
   return (
     <MainContainer>
       <Exps />
-      {view[0] && <SkillList list={Skill[0].list} title={Skill[0].title} view={view[0]} />}
+      {styleOption && (
+        <SkillList list={Skill[0].list} title={Skill[0].title} styleOption={styleOption} />
+      )}
       <Extras />
     </MainContainer>
   )

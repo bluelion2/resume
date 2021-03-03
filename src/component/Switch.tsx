@@ -1,9 +1,9 @@
-import React, { useContext, memo } from "react";
-import { StoreContext } from "../store";
-import { Switch } from "antd";
-import "antd/dist/antd.css";
-import styled from "styled-components";
-import { TABLET } from "../types";
+import React, { useContext, memo } from 'react'
+import { StoreContext, StoreValue } from '../store'
+import { Switch } from 'antd'
+import 'antd/dist/antd.css'
+import styled from 'styled-components'
+import { TABLET } from '../types'
 
 const SwitchSection: any = styled.div`
   display: flex;
@@ -17,20 +17,22 @@ const SwitchSection: any = styled.div`
   ${TABLET} {
     display: none;
   }
-`;
+`
 
 const SwitchIcon = (): JSX.Element => {
-  const { view }: any = useContext(StoreContext);
+  const {
+    printStyle: [styleOption, setStyleOption],
+  } = useContext<StoreValue>(StoreContext)
   const handleChange = (checked: boolean): void => {
-    view[1](checked);
-  };
+    setStyleOption(checked)
+  }
 
   return (
     <SwitchSection>
-      <span>{view[0] ? "PDF" : "Icon"}</span>
+      <span>{styleOption ? 'PDF' : 'Icon'}</span>
       <Switch onChange={handleChange} />
     </SwitchSection>
-  );
-};
+  )
+}
 
-export default memo(SwitchIcon);
+export default memo(SwitchIcon)

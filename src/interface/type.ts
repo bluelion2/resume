@@ -1,29 +1,29 @@
 export type Skill = {
-  name: string;
-  url: string;
-  detail?: string[];
-};
+  name: string
+  url: string
+  detail?: string[]
+}
 
 export type Project = {
-  title: string;
-  date: string;
-  worker: number;
-  subtitle: string;
-  mywork: Array<string>;
-  stack: Array<string>;
-  memory?: string[];
-  youtube?: string;
-  link?: string;
-};
+  title: string
+  date: string
+  worker: number
+  subtitle: string
+  mywork: Array<string>
+  stack: Array<string>
+  memory?: string[]
+  youtube?: string
+  link?: string
+}
 
 export type IProject = {
-  project: Project;
-};
+  project: Project
+}
 
 export type IExpList = {
-  name: string;
-  subtitle: string;
-  date: string;
-  icon?: string;
-  project: Array<Project>;
-};
+  name: string
+  subtitle: string
+  date: string
+  icon?: string
+  project: Array<Project>
+}
