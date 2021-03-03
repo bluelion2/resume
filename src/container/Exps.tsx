@@ -1,16 +1,16 @@
-import React from "react";
-import styled from "styled-components";
-import { Exp } from "../component";
-import { ExpList } from "../data";
-import { TABLET } from "../types";
+import React from 'react'
+import styled from 'styled-components'
+import { Exp } from '../component'
+import { ExpList } from '../data'
+import { DESKTOP } from '../types'
 
 export const ExpContainer = styled.section`
   width: 1024px;
   margin: 0 auto;
-  ${TABLET} {
+  ${DESKTOP} {
     width: 90%;
   }
-`;
+`
 
 export const Exps = (): JSX.Element => {
   return (
@@ -20,5 +20,5 @@ export const Exps = (): JSX.Element => {
         <Exp career={exp} key={`${exp.name}-${index}`} />
       ))}
     </ExpContainer>
-  );
-};
+  )
+}
