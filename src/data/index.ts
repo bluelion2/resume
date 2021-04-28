@@ -13,7 +13,7 @@ export const ExpList: Array<IExpList> = [
         title: '매쓰플랫 신규 프로젝트 개발',
         date: '2020.07 ~ 진행중',
         worker: 4,
-        subtitle: `기존 웹 매쓰플랫의 디자인, DB설계등 여러 이슈로 인해 기존 서비스를 갈아엎고 새롭게 만드는 프로젝트 입니다.`,
+        subtitle: `기존 웹 매쓰플랫의 디자인, DB설계등 여러 이슈로 인해, DB부터 해서 서비스 전체를 갈아엎고 새롭게 만드는 프로젝트 입니다. 기존 서비스는 최소한의 유지보수만 하면서,  불편했던 점들을 개선하고 기존기능에 더불어서 신규 기능 더하는 개발 프로젝트입니다.`,
         stack: ['React', 'Mobx', 'EmotionJS', 'Storybook', 'Typescript'],
         mywork: [
           '웹 매쓰플랫의 핵심기능인 학습지만들기와 교재만들기 기능 전체를 담당했습니다.',
@@ -23,7 +23,7 @@ export const ExpList: Array<IExpList> = [
       },
       {
         title: '웹 매쓰플랫 개발 및 유지보수',
-        date: '2019.08 ~ 2020.04',
+        date: '2019.08 ~ 2020.06',
         worker: 4,
         subtitle: `안드로이드 태블릿앱 '매쓰플렛'과 같은 기능을 웹에서 지원하기 위한 팀프로젝트를 진행하고 있습니다. 기존 1차 개발 중반에 참가를 하여 현재까지 진행중이며, 핵심 기능을 도맡아 개발하고, 먼저 개발된 기능의 코드 리팩토링을 하고 있습니다.`,
         stack: ['React', 'Mobx', 'Redux', 'Sass', 'Styled Component', 'Typescript'],
@@ -52,7 +52,7 @@ export const ExpList: Array<IExpList> = [
         date: '2019.02 ~ 2019.03',
         worker: 2,
         subtitle:
-          '배송 서비스를 진행하기 위해 내부 배송기사용 앱의 개발이 필요했습니다. 빠른 시간 내에 개발해서 사용해야 했기 때문에, 사내 기술스택과 제일 맞는 Ionic4를 이용해서 개발을 하였습니다.  안드로이드 버전만 배포하였습니다.',
+          '배송 서비스를 진행하기 위해 내부 배송기사용 앱의 개발이 필요했습니다. 빠른 시간 내에 개발해서 사용해야 했기 때문에, 사내 기술스택과 제일 맞는 Ionic4를 이용해서 개발을 하였습니다. 안드로이드 버전만 배포하였습니다. 현재는 플레이스토어에서 내려가있는 상태입니다.',
         link: 'https://play.google.com/store/apps/details?id=app.fooding.delivery',
         youtube: 'https://www.youtube.com/embed/_tYefWU1kzY',
         stack: ['Ionic4', 'Sass'],
@@ -145,7 +145,7 @@ export const Extra = [
   {
     name: '바리스타 및 카페 매니저 근무',
     date: '2012.03 ~ 2017.08',
-    status: '바리스타 및 카페 매니저로 커피업계에서 6년 가까이 일을 했습니다.',
+    status: '바리스타 및 카페 매니저로 커피업계에서 5년 가까이 일을 했습니다.',
   },
   { name: '한남대학교', date: '2008.02 ~ 2011.09', status: '교육학과 중퇴' },
 ]
