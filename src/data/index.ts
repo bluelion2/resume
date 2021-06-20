@@ -69,7 +69,6 @@ export const ExpList: Array<IExpList> = [
         youtube: 'https://www.youtube.com/embed/jQ1YNnLlUKs',
         stack: ['Angular7', 'Sass'],
         mywork: [
-          '하나의 Root 컴포넌트에서 모든것을 관리하던 구조에서 페이지, 컴포넌트별로 쪼개 구조를 개선했습니다.',
           '초기 로딩속도가 느린점을 극복하기 위해 하나의 Root에서 모든것을 처리하던 구조에서, 초기에 필요하지 않은 모듈 및 라이브러리들을 지연로딩하는 방법으로 개선하였습니다.',
           '새롭게 추가된 정기배송 신청 서비스를 위한 페이지 추가를 했습니다.',
         ],
