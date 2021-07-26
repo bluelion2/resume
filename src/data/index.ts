@@ -14,10 +14,11 @@ export const ExpList: Array<IExpList> = [
         date: '2020.07 ~ 진행중',
         worker: 4,
         subtitle: `기존 웹 매쓰플랫의 디자인, DB설계등 여러 이슈로 인해, DB부터 해서 서비스 전체를 갈아엎고 새롭게 만드는 프로젝트 입니다. 기존 서비스는 최소한의 유지보수만 하면서,  불편했던 점들을 개선하고 기존기능에 더불어서 신규 기능 더하는 개발 프로젝트입니다.`,
-        stack: ['React', 'Mobx', 'EmotionJS', 'Storybook', 'Typescript'],
+        stack: ['React', 'Mobx', 'EmotionJS', 'Storybook', 'Typescript', 'Cypress'],
         mywork: [
           '웹 매쓰플랫의 핵심기능인 학습지만들기와 교재만들기 기능 전체를 담당했습니다.',
           '안드로이드 앱 내부에 일부 페이지가 웹뷰로 들어감으로써 기능별 분기처리를 할 수 있는 공통함수와 인증하는 작업을 담당했습니다.',
+          'Cypress를 도입하여 E2E 테스트를 작업하고 있습니다.',
           '프론트엔드 파트에서 전체 일정 및 진행사항을 관리하고 다른파트와 조율하는 역할을 담당했습니다.',
         ],
       },
