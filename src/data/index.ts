@@ -5,7 +5,7 @@ export const ExpList: Array<IExpList> = [
   {
     name: '프리윌린',
     subtitle:
-      '수학교육을 위한 B2B 모바일 솔루션 매쓰플랫 서비스의 선생님앱 웹 버전을 개발하고 있습니다. 프론트엔드 파트에서 전체 일정 및 진행사항을 관리하고 다른파트와 조율하는 역할을 담당했습니다.',
+      '수학교육을 위한 B2B 모바일 솔루션 `매쓰플랫` 서비스의 웹 버전을 개발하고 있습니다. 프론트엔드 파트에서 전체 일정 및 진행사항을 관리하고 다른파트와 조율하는 역할을 담당했습니다.',
     date: '2019.08 ~ 재직중',
     icon: '/assets/mathflat.png',
     project: [
@@ -18,6 +18,19 @@ export const ExpList: Array<IExpList> = [
         mywork: [
           '웹 매쓰플랫의 핵심기능인 학습지만들기와 교재만들기 기능 전체를 담당했습니다.',
           '안드로이드 앱 내부에 일부 페이지가 웹뷰로 들어감으로써 기능별 분기처리를 할 수 있는 공통함수와 인증하는 작업을 담당했습니다.',
+          'Cypress를 도입하여 E2E 테스트를 작업하고 있습니다.',
+          '프론트엔드 파트에서 전체 일정 및 진행사항을 관리하고 다른파트와 조율하는 역할을 담당했습니다.',
+        ],
+      },
+      {
+        title: '출석 서비스 웹 개발',
+        date: '2020.11',
+        worker: 1,
+        subtitle: `학원에 학생들이 출석을 하면, 출석 기록을 남기고 학부모에게 문자를 전달하는 웹서비스를 개발했습니다. 기존에 있던 네이티브앱을 대체하는 프로젝트로써 디자인이나 기획이 따로 없이 혼자서 개발했습니다.`,
+        stack: ['React', 'Typescript', 'Mobx', 'Scss', 'Webpack'],
+        mywork: [
+          '프론트엔드 개발 환경 셋팅 및 전체 기능을 구현하였습니다.',
+          'Cypress를 도입하여 E2E 테스트를 작업하고 있습니다.',
         ],
       },
       {
@@ -42,14 +55,14 @@ export const ExpList: Array<IExpList> = [
     icon: '/assets/fooding.png',
     project: [
       {
-        title: 'Fooding Delivery App 개발',
+        title: 'Fooding Delivery App 개발 (현재 서비스되지 않음)',
         date: '2019.02 ~ 2019.03',
         worker: 2,
         subtitle:
           '배송 서비스를 진행하기 위해 내부 배송기사용 앱의 개발이 필요했습니다. 빠른 시간 내에 개발해서 사용해야 했기 때문에, 사내 기술스택과 제일 맞는 Ionic4를 이용해서 개발을 하였습니다. 현재는 앱이 내려가있는 상태입니다. ',
         link: 'https://play.google.com/store/apps/details?id=app.fooding.delivery',
         youtube: 'https://www.youtube.com/embed/_tYefWU1kzY',
-        stack: ['Ionic4', 'Sass'],
+        stack: ['Ionic 4', 'Sass'],
         mywork: [
           '프론트엔드 개발환경 셋팅 및 전체 기능 구현을 했습니다. 자동로그인, 주문의 상태에 따른 스텝 표시 및 이동, Routing 및 안드로이드 테블릿과 모바일에 맞게 구현하였습니다.',
         ],
@@ -59,12 +72,13 @@ export const ExpList: Array<IExpList> = [
         date: '2018.10 ~ 2019.07',
         worker: 1,
         subtitle:
-          '외주로 부터 개발된 fooding.io 를 인계받아 개선하는 작업을 진행하였습니다. 요청에 따라 사이트 내 정기배송 소개페이지 등 추가 개발도 진행하였습니다. 이와 관련해서 개선하기 위한 경험을 간단히 발표해 해보았습니다.',
+          '음식점과 단체 주문 고객 사이를 연결하는 Fooding 서비스를 운영하고 있습니다. 현재는 회사 사업방향이 플랫폼에서 공유주방 운영, 배송 서비스 등으로 바뀌었습니다',
         link: 'https://drive.google.com/open?id=1TQQJSFa6Em6CX0D9NRdAxvY2dRxQQ6K_',
         youtube: 'https://www.youtube.com/embed/jQ1YNnLlUKs',
-        stack: ['Angular7', 'Sass'],
+        stack: ['Angular 7', 'Sass'],
         mywork: [
-          '초기 로딩속도가 느린점을 극복하기 위해 하나의 Root에 담겨져 있던 구조에서, 재사용을 위해 컴포넌트 분리와, 초기에 필요하지 않은 모듈 및 라이브러리들을 지연로딩하는 방법으로 개선하였습니다.',
+          '외주로 부터 개발된 fooding.io 를 인계받아 개선하는 작업을 진행하였습니다.',
+          '재사용을 위해 컴포넌트 분리와, 초기에 필요하지 않은 모듈 및 라이브러리들을 지연로딩하는 방법으로 개선하였습니다.',
           '새롭게 추가된 정기배송 신청 서비스를 위한 페이지 추가를 했습니다.',
         ],
       },
@@ -73,7 +87,7 @@ export const ExpList: Array<IExpList> = [
         date: '2018.10 ~ 2018.12',
         worker: 1,
         subtitle: `푸딩 웹사이트를 관리하기 위한 Admin Page 개발 및 유지보수를 담당했습니다. 기획안에 기능 외에는 따로 디자인을 준비하지 않아서 Angular Material을 이용하여 디자인을 하였습니다. 백엔드 개발자 한분과 같이 작업을 하였고, 완성 후 추가적인 개발 요청이 들어올 때마다 진행되었습니다.`,
-        stack: ['Angular7', 'Sass'],
+        stack: ['Angular 7', 'Sass'],
         youtube: 'https://www.youtube.com/embed/jeXTYYE-4JU',
         mywork: [
           '프론트엔드 개발환경 셋팅, 그리고 데스크랍과 테블릿 반응형 작업등 전체 기능을 구현했습니다.',
@@ -115,7 +129,6 @@ export const Current: Skill[] = [
   },
   { name: 'Sass', url: '/assets/sass.png' },
   { name: 'React', url: '/assets/react.png', detail: details['react'] },
-  { name: 'Angular', url: '/assets/angular.png', detail: details['angular'] },
   { name: 'Mobx', url: '/assets/mobx.jpeg' },
 ]
 
