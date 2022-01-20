@@ -30,7 +30,7 @@ const SwitchIcon = (): JSX.Element => {
   return (
     <SwitchSection>
       <span>{styleOption ? 'PDF' : 'Icon'}</span>
-      <Switch onChange={handleChange} />
+      <Switch checked={styleOption} onChange={handleChange} />
     </SwitchSection>
   )
 }
