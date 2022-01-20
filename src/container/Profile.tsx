@@ -32,5 +32,14 @@ export const Profile = (): JSX.Element => (
       개발의 완벽함과 비즈니스 가치를 동시에 쟁취하기 위해 노력합니다. 단순히 업무를 하는 것이 아닌,
       보다 적극적으로 기획에 참여하고 아이디어를 제시할 수 있는 환경을 선호합니다.
     </p>
+    <p>
+      <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://www.notion.so/seunghun89/Portfolio-13df0df48e634cc29b7314931f074434"
+      >
+        포트폴리오 링크
+      </a>
+    </p>
   </ProfileBox>
 )
