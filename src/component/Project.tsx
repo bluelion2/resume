@@ -102,20 +102,20 @@ export const Project = ({ project, styleOption }: Props): JSX.Element => {
         {project.title}
         <small>{project.date}</small>
       </h4>
-      <p>
+      {/* <p>
         {project.subtitle}
         {!styleOption && project.link ? (
           <a target="_blank" rel="noopener noreferrer" href={project.link}>
             <Icon type="arrow-right" />
           </a>
         ) : null}
-      </p>
-      <StackList>
+      </p> */}
+      {/* <StackList>
         <span>Stack :</span>
         {styleOption
           ? project.stack.map((item: string) => <StackStr key={item}>{item}</StackStr>)
           : project.stack.map((item: string) => <Stack key={item}>{item}</Stack>)}
-      </StackList>
+      </StackList> */}
       <h5>My Work</h5>
       <ul>
         {project.mywork.map((work: string) => (
