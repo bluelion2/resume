@@ -2,12 +2,12 @@ import React from 'react'
 import styled from 'styled-components'
 import { SkillItem } from './SkillItem'
 import { Skill } from '../interface/type'
-import { TABLET } from '../types'
+import { DESKTOP } from '../types'
 
 const SkillListSection = styled.section`
   width: 1024px;
   margin: 0 auto;
-  ${TABLET} {
+  ${DESKTOP} {
     width: 90%;
   }
 `
