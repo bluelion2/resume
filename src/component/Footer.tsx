@@ -27,13 +27,29 @@ export const Footer = (): JSX.Element | null => {
       <UlBox>
         <ul>
           <li>
-            Github: <a href="https://github.com/bluelion2">https://github.com/bluelion2</a>
+            Github:{' '}
+            <a rel="noopener noreferrer" target="_blank" href="https://github.com/bluelion2">
+              https://github.com/bluelion2
+            </a>
           </li>
           <li>
-            resume: <a href="https://resume.sh89.now.sh">https://resume.sh89.now.sh</a>
+            resume:
+            <a rel="noopener noreferrer" target="_blank" href="https://resume.sh89.now.sh">
+              https://resume.sh89.now.sh
+            </a>
           </li>
           <li>
             Mail: <a href="mailto:iltk2000@gmail.com">iltk2000@gmail.com</a>
+          </li>
+          <li>
+            Portfolio:
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              herf="https://www.notion.so/seunghun89/Portfolio-13df0df48e634cc29b7314931f074434"
+            >
+              Notion
+            </a>
           </li>
         </ul>
       </UlBox>
