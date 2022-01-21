@@ -48,7 +48,7 @@ export const Footer = (): JSX.Element | null => {
               rel="noopener noreferrer"
               href="https://www.notion.so/seunghun89/Portfolio-13df0df48e634cc29b7314931f074434"
             >
-              Notion
+              https://www.notion.so/seunghun89/Portfolio-13df0df48e634cc29b7314931f074434
             </a>
           </li>
         </ul>
