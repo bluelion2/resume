@@ -46,7 +46,7 @@ export const Footer = (): JSX.Element | null => {
             <a
               target="_blank"
               rel="noopener noreferrer"
-              herf="https://www.notion.so/seunghun89/Portfolio-13df0df48e634cc29b7314931f074434"
+              href="https://www.notion.so/seunghun89/Portfolio-13df0df48e634cc29b7314931f074434"
             >
               Notion
             </a>
