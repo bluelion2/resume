@@ -22,7 +22,8 @@
 
 ## author
 👐🏻 강승훈
-* Link: [resume](https://resume.sh89.now.sh)
-* Github: [link](https://github.com/bluelion2)
+* Link: [resume](ksh-resume.vercel.app)
+* Github: [Link](https://github.com/bluelion2)
+* Portfolio: [Link](https://seunghun89.notion.site/Portfolio-13df0df48e634cc29b7314931f074434)
 
 🙋🏻 🙋🏻‍♂️
