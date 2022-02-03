@@ -43,12 +43,8 @@ export const Footer = (): JSX.Element | null => {
           </li>
           <li>
             Portfolio:
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://www.notion.so/seunghun89/Portfolio-13df0df48e634cc29b7314931f074434"
-            >
-              https://www.notion.so/seunghun89/Portfolio-13df0df48e634cc29b7314931f074434
+            <a target="_blank" rel="noopener noreferrer" href="https://bit.ly/3Ho8Dy0">
+              https://bit.ly/3Ho8Dy0
             </a>
           </li>
         </ul>
