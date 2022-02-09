@@ -102,6 +102,7 @@ export const Project = ({ project, styleOption }: Props): JSX.Element => {
         {project.title}
         <small>{project.date}</small>
       </h4>
+      <p>{project.subtitle}</p>
       {/* <p>
         {project.subtitle}
         {!styleOption && project.link ? (
