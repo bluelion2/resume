@@ -40,11 +40,7 @@ export const Profile = (): JSX.Element => {
       </p>
       {!styleOption && (
         <p>
-          <a
-            rel="noopener noreferrer"
-            target="_blank"
-            href="https://www.notion.so/seunghun89/Portfolio-13df0df48e634cc29b7314931f074434"
-          >
+          <a rel="noopener noreferrer" target="_blank" href="https://bit.ly/3Ho8Dy0">
             포트폴리오 링크
           </a>
         </p>
