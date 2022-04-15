@@ -1,6 +1,5 @@
 <h1 align="center">안녕하세요. 프론트엔드 개발자 강승훈 입니다. 😀</h1>
 
-
 ## Start
 
 ```sh
@@ -16,7 +15,7 @@
     Typescript
     React
     Styled-component
-    deploy: zeit
+    deploy: vercel
 ```
 ---
 
