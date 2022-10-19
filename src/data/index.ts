@@ -1,4 +1,3 @@
-import { Skill } from '../interface/type'
 import { IExpList } from '../interface/type'
 
 export const ExpList: Array<IExpList> = [
@@ -10,10 +9,22 @@ export const ExpList: Array<IExpList> = [
     icon: '/assets/mathflat.png',
     project: [
       {
+        title: '매쓰플랫 프로젝트 고도화',
+        date: '2022.07 ~ 진행중',
+        worker: 1,
+        subtitle: `학원에 학생들이 출석을 하면, 출석 기록을 남기고 학부모에게 문자를 전달하는 웹서비스를 개발했습니다. 기존에 있던 네이티브앱을 대체하는 프로젝트로써 디자인이나 기획이 따로 없이 혼자서 개발했습니다.`,
+        stack: ['Github Action', 'Vite', 'Jira', 'ETC..'],
+        mywork: [
+          '자동화를 위한 Jira Automation, Github Action을 개발해서 팀 내 생산성 향상에 기여하고 있습니다. ',
+          '개발 환경을 개선하기 위해서 기존 CRA환경에서 Vite로 변환하는 작업을 했습니다.',
+        ],
+      },
+      {
         title: '출석 서비스 웹 개발',
         date: '2020.11',
         worker: 1,
-        subtitle: `학원에 학생들이 출석을 하면, 출석 기록을 남기고 학부모에게 문자를 전달하는 웹서비스를 개발했습니다. 기존에 있던 네이티브앱을 대체하는 프로젝트로써 디자인이나 기획이 따로 없이 혼자서 개발했습니다.`,
+        subtitle:
+          '비즈니스 성장을 위해 사용자들이 원하는 기능들 일부를 개선하거나 추가로 개발하는 작업을 진행하고 있습니다. ',
         stack: ['React', 'Typescript', 'Mobx', 'Scss', 'Webpack'],
         mywork: [
           '프론트엔드 개발 환경 셋팅 및 전체 기능을 구현하였습니다.',
@@ -22,18 +33,18 @@ export const ExpList: Array<IExpList> = [
       },
       {
         title: '매쓰플랫 신규 프로젝트 개발',
-        date: '2020.07 ~ 진행중',
+        date: '2020.07 ~ 2022.06',
         worker: 4,
         subtitle: `기존 웹 매쓰플랫의 디자인과 DB설계등 이슈로 인해, DB부터 해서 서비스 전체를 갈아엎고 새롭게 만드는 프로젝트 입니다. 기존 서비스는 최소한의 유지보수만 하면서, 불편했던 점들을 개선하고 기존기능에 더불어서 신규 기능 더하는 개발 프로젝트입니다.
         \r\n 팀 내 사정으로 인해 일정과 목표가 자주 변경되면서  1년 반 가까이 진행되었고, 21년 10월에 클로즈베타, 22년 1월에 오픈베타를 진행하였습니다. 3월부터 구 버전 사용자 전체 전환을 시작해서 22년 6월에 끝내는 것을 목표로 하고 있습니다.
         `,
         stack: ['React', 'Mobx', 'EmotionJS', 'Storybook', 'Typescript', 'Cypress'],
         mywork: [
-          '프론트엔드 파트(총 6명) 에서 일감 분배, 전체 일정 및 진행사항을 관리하고 다른파트와 조율하는 역할을 담당했습니다.',
+          '프론트엔드 파트(4명 ~ 6명) 에서 일감 분배, 전체 일정 및 진행사항을 관리하고 다른파트와 조율하는 역할을 담당했습니다.',
           '웹 매쓰플랫의 핵심기능인 학습지만들기와 교재만들기 기능 전체를 담당했습니다.',
           'Cypress를 도입하여 주요 사용패턴 일부를 주기적으로 확인합니다.',
+          'Storybook을 이용해 디자이너와 디자인 시스템을 구축하는 작업을 했습니다.',
           '안드로이드 앱 내부에 일부 페이지가 웹뷰로 들어감으로써 기능별 분기처리를 할 수 있는 공통함수와 인증하는 작업을 담당했습니다. (프로젝트 중간에 통 웹뷰로 바뀌게 되면서 폐기 되었습니다.)',
-          '팀 내 생산성 향상을 위해 Jira, Github Actions등을 사용해서 자동화 작업을 진행했습니다.',
         ],
       },
       {
@@ -123,27 +134,27 @@ export const details = {
   ],
 }
 
-export const Current: Skill[] = [
-  { name: 'HTML & CSS', url: '/assets/html.png', detail: details['html'] },
-  { name: 'Javascript', url: '/assets/js.png', detail: details['js'] },
-  { name: 'Typescript', url: '/assets/ts.png' },
-  {
-    name: 'Styled Component',
-    url: '/assets/styled.png',
-  },
-  { name: 'Sass', url: '/assets/sass.png' },
-  { name: 'React', url: '/assets/react.png', detail: details['react'] },
-  { name: 'Mobx', url: '/assets/mobx.jpeg' },
-]
+// export const Current: Skill[] = [
+//   { name: 'HTML & CSS', url: '/assets/html.png', detail: details['html'] },
+//   { name: 'Javascript', url: '/assets/js.png', detail: details['js'] },
+//   { name: 'Typescript', url: '/assets/ts.png' },
+//   {
+//     name: 'Styled Component',
+//     url: '/assets/styled.png',
+//   },
+//   { name: 'Sass', url: '/assets/sass.png' },
+//   { name: 'React', url: '/assets/react.png', detail: details['react'] },
+//   { name: 'Mobx', url: '/assets/mobx.jpeg' },
+// ]
 
-export const Prev: Skill[] = [
-  { name: 'Ionic', url: '/assets/ionic.jpeg' },
-  { name: 'Redux', url: '/assets/Redux.png' },
-  { name: 'Rxjs', url: '/assets/rxjs.png' },
-  { name: 'Jest', url: '/assets/jest.png' },
-  { name: 'StoryBook', url: '/assets/storybook.png' },
-  { name: 'Figma', url: '/assets/figma.png' },
-]
+// export const Prev: Skill[] = [
+//   { name: 'Ionic', url: '/assets/ionic.jpeg' },
+//   { name: 'Redux', url: '/assets/Redux.png' },
+//   { name: 'Rxjs', url: '/assets/rxjs.png' },
+//   { name: 'Jest', url: '/assets/jest.png' },
+//   { name: 'StoryBook', url: '/assets/storybook.png' },
+//   { name: 'Figma', url: '/assets/figma.png' },
+// ]
 
 export const Extra = [
   {
