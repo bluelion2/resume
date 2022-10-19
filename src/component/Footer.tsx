@@ -28,6 +28,12 @@ export const Footer = (): JSX.Element | null => {
         <ul>
           <li>
             Github:{' '}
+            <a rel="noopener noreferrer" target="_blank" href="https://github.com/bluelion2">
+              https://github.com/bluelion2
+            </a>
+          </li>
+          <li>
+            Blog:{' '}
             <a rel="noopener noreferrer" target="_blank" href="https://bit.ly/3VGpzaw">
               bit.ly/3VGpzaw
             </a>
