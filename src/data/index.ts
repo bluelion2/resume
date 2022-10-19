@@ -12,7 +12,8 @@ export const ExpList: Array<IExpList> = [
         title: '매쓰플랫 프로젝트 고도화',
         date: '2022.07 ~ 진행중',
         worker: 1,
-        subtitle: `학원에 학생들이 출석을 하면, 출석 기록을 남기고 학부모에게 문자를 전달하는 웹서비스를 개발했습니다. 기존에 있던 네이티브앱을 대체하는 프로젝트로써 디자인이나 기획이 따로 없이 혼자서 개발했습니다.`,
+        subtitle:
+          '비즈니스 성장을 위해 사용자들이 원하는 기능들 일부를 개선하거나 추가로 개발하는 작업을 진행하고 있습니다. ',
         stack: ['Github Action', 'Vite', 'Jira', 'ETC..'],
         mywork: [
           '자동화를 위한 Jira Automation, Github Action을 개발해서 팀 내 생산성 향상에 기여하고 있습니다. ',
@@ -23,8 +24,7 @@ export const ExpList: Array<IExpList> = [
         title: '출석 서비스 웹 개발',
         date: '2020.11',
         worker: 1,
-        subtitle:
-          '비즈니스 성장을 위해 사용자들이 원하는 기능들 일부를 개선하거나 추가로 개발하는 작업을 진행하고 있습니다. ',
+        subtitle: `학원에 학생들이 출석을 하면, 출석 기록을 남기고 학부모에게 문자를 전달하는 웹서비스를 개발했습니다. 기존에 있던 네이티브앱을 대체하는 프로젝트로써 디자인이나 기획이 따로 없이 혼자서 개발했습니다.`,
         stack: ['React', 'Typescript', 'Mobx', 'Scss', 'Webpack'],
         mywork: [
           '프론트엔드 개발 환경 셋팅 및 전체 기능을 구현하였습니다.',
