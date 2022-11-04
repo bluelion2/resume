@@ -9,15 +9,28 @@ export const ExpList: Array<IExpList> = [
     icon: '/assets/mathflat.png',
     project: [
       {
+        title: 'Content Managing Service 개발',
+        date: '2022.11 ~ 진행중',
+        worker: 1,
+        subtitle:
+          '수학문제, 교재, 학습지를 관리하는 CMS를 개발하는 프로젝트입니다. 새로운 프로젝트를 만들어 개발하면서, 개발이 안된 구버전의 기능을 Iframe으로 연결해서 보여주도록 작업하고 있습니다.',
+        stack: ['React Query', 'React + TS', 'Vite'],
+        mywork: [
+          '새로운 프로젝트를 만들면서, 기존의 사용자들은 계속 쓸 수 있도록 Iframe으로 연결하였습니다. 로그인, 자동 인증 등을 자연스럽게 하여 사용성 향상에 기여하였습니다.',
+          '백엔드 개발자와 같이 "도메인 주도 개발"을 하려 시도해보고 있습니다. ',
+        ],
+      },
+      {
         title: '매쓰플랫 프로젝트 고도화',
         date: '2022.07 ~ 진행중',
-        worker: 1,
+        worker: 6,
         subtitle:
           '비즈니스 성장을 위해 사용자들이 원하는 기능들 일부를 개선하거나 추가로 개발하는 작업을 진행하고 있습니다. ',
         stack: ['Github Action', 'Vite', 'Jira', 'ETC..'],
         mywork: [
           '자동화를 위한 Jira Automation, Github Action을 개발해서 팀 내 생산성 향상에 기여하고 있습니다. ',
           '개발 환경을 개선하기 위해서 기존 CRA환경에서 Vite로 변환하는 작업을 했습니다.',
+          'Cypress E2E테스트를 추가로 작성하며 안정성을 향상하고자 노력하고 있습니다.',
         ],
       },
       {
@@ -102,7 +115,7 @@ export const ExpList: Array<IExpList> = [
           '외주로 부터 개발된 fooding.io 를 인계받아 개선하는 작업을 진행하였습니다. 요청에 따라 사이트 내 정기배송 소개페이지 등 추가 개발도 진행하였습니다. 이와 관련해서 개선하기 위한 경험을 간단히 발표해 해보았습니다.',
         link: 'https://drive.google.com/open?id=1TQQJSFa6Em6CX0D9NRdAxvY2dRxQQ6K_',
         youtube: 'https://www.youtube.com/embed/jQ1YNnLlUKs',
-        stack: ['Angular 7', 'Sass'],
+        stack: ['Angular', 'Sass'],
         mywork: [
           '외주로 부터 개발된 fooding.io 를 인계받아 개선하는 작업을 진행하였습니다.',
           '재사용을 위해 컴포넌트 분리와, 초기에 필요하지 않은 모듈 및 라이브러리들을 지연로딩하는 방법으로 개선하였습니다.',
