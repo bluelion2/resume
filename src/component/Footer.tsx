@@ -34,7 +34,11 @@ export const Footer = (): JSX.Element | null => {
           </li>
           <li>
             Blog:{' '}
-            <a rel="noopener noreferrer" target="_blank" href="https://bit.ly/3VGpzaw">
+            <a
+              rel="noopener noreferrer"
+              target="_blank"
+              href="https://bluelion2-github-io-ptkq.vercel.app"
+            >
               bit.ly/3VGpzaw
             </a>
           </li>
