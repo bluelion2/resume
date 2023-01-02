@@ -3,10 +3,11 @@ import styled from 'styled-components'
 import { SkillItem } from './SkillItem'
 import { Skill } from '../interface/type'
 import { DESKTOP } from '../types'
+import { skills } from '../data'
 
 const SkillListSection = styled.section`
   width: 1024px;
-  margin: 0 auto;
+  margin: 0.5rem auto;
   ${DESKTOP} {
     width: 90%;
   }
@@ -15,20 +16,17 @@ const SkillListSection = styled.section`
 const List = styled.div`
   display: flex;
   flex-wrap: wrap;
-  flex-direction: ${({ styleOption }: { styleOption: boolean }) => (styleOption ? 'column' : null)};
 `
 
-type Props = {
-  title: string
-  list: Skill[]
-  styleOption: boolean
-}
-
-export const SkillList = ({ title, list, styleOption }: Props) => {
+export const SkillList = () => {
   return (
     <SkillListSection>
-      <h3>{title}</h3>
-      <List styleOption={styleOption}>
+      <h2>Skills</h2>
+      <span>
+        HTML, CSS, JavaScript, TypeScript, React.js, MobX, Emotion, Storybook, Jest, Cypress,
+        Webpack
+      </span>
+      {/* <List>
         {styleOption
           ? list.map(
               (item: Skill) =>
@@ -44,7 +42,7 @@ export const SkillList = ({ title, list, styleOption }: Props) => {
           : list.map((item: Skill, index) => (
               <SkillItem name={item.name} url={item.url} key={item.name} />
             ))}
-      </List>
+      </List> */}
     </SkillListSection>
   )
 }

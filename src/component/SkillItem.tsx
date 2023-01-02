@@ -62,11 +62,8 @@ const Item = styled.div`
   }
 `
 
-export const SkillItem = ({ name, url }: { name: string; url: string }) => (
+export const SkillItem = ({ name }: { name: string }) => (
   <SkillItemBox>
-    <Item>
-      <img src={url} alt={name} />
-    </Item>
     <span>{name}</span>
   </SkillItemBox>
 )

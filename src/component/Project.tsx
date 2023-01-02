@@ -86,10 +86,6 @@ const Stack = styled.span`
   }
 `
 
-const StackStr = styled.span`
-  border-bottom: 1px solid black;
-`
-
 type Props = {
   project: IProject['project']
   styleOption: boolean
@@ -114,7 +110,7 @@ export const Project = ({ project, styleOption }: Props): JSX.Element => {
       {/* <StackList>
         <span>Stack :</span>
         {styleOption
-          ? project.stack.map((item: string) => <StackStr key={item}>{item}</StackStr>)
+          ? project.stack.map((item: string) => <span key={item}>{item}</span>)
           : project.stack.map((item: string) => <Stack key={item}>{item}</Stack>)}
       </StackList> */}
       <h5>My Work</h5>
@@ -126,7 +122,7 @@ export const Project = ({ project, styleOption }: Props): JSX.Element => {
           <iframe src={project.youtube} title="youtube"></iframe>
         ) : null}
       </ul>
-      {project.memory && (
+      {/* {project.memory && (
         <>
           <h5>기억에 남는 점</h5>
           <ul>
@@ -135,7 +131,7 @@ export const Project = ({ project, styleOption }: Props): JSX.Element => {
             ))}
           </ul>
         </>
-      )}
+      )} */}
     </ProjectItem>
   )
 }

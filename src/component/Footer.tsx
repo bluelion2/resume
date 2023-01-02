@@ -74,11 +74,6 @@ export const Footer = (): JSX.Element | null => {
             이메일
           </a>
         </li>
-        <li>
-          <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/Hun89">
-            페이스북
-          </a>
-        </li>
       </ul>
     </FooterBox>
   )

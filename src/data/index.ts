@@ -9,7 +9,7 @@ export const ExpList: Array<IExpList> = [
     icon: '/assets/mathflat.png',
     project: [
       {
-        title: 'Content Managing Service 개발',
+        title: 'CMS(Content Managing Service) 개발',
         date: '2022.11 ~ 진행중',
         worker: 1,
         subtitle:
@@ -28,20 +28,20 @@ export const ExpList: Array<IExpList> = [
           '비즈니스 성장을 위해 사용자들이 원하는 기능들 일부를 개선하거나 추가로 개발하는 작업을 진행하고 있습니다. ',
         stack: ['Github Action', 'Vite', 'Jira', 'ETC..'],
         mywork: [
-          '자동화를 위한 Jira Automation, Github Action을 개발해서 팀 내 생산성 향상에 기여하고 있습니다. ',
           '개발 환경을 개선하기 위해서 기존 CRA환경에서 Vite로 변환하는 작업을 했습니다.',
-          'Cypress E2E테스트를 추가로 작성하며 안정성을 향상하고자 노력하고 있습니다.',
+          '팀 내 생산성 향상을 위해 Jira automation, Github Actions등을 직접 구성하여 자동화 작업을 진행했습니다.',
+          'Github Action, Cypress를 사용하여 서비스 배포때마다 E2E테스트를 자동으로 실행하게 하였습니다.',
         ],
       },
       {
-        title: '출석 서비스 웹 개발',
+        title: '학생 출석 서비스',
         date: '2020.11',
         worker: 1,
         subtitle: `학원에 학생들이 출석을 하면, 출석 기록을 남기고 학부모에게 문자를 전달하는 웹서비스를 개발했습니다. 기존에 있던 네이티브앱을 대체하는 프로젝트로써 디자인이나 기획이 따로 없이 혼자서 개발했습니다.`,
         stack: ['React', 'Typescript', 'Mobx', 'Scss', 'Webpack'],
         mywork: [
-          '프론트엔드 개발 환경 셋팅 및 전체 기능을 구현하였습니다.',
-          'Cypress를 도입하여 Release 배포시마다 주기적으로 테스트합니다.',
+          'CRA대신 Webpack5로 직접 환경구축을 히여 빌드속도를 개선하였습니다.',
+          'Github Action, Cypress를 사용하여 서비스 배포때마다 E2E테스트를 자동으로 실행하게 하였습니다.',
           '반응형으로 작업하여, 웹, 테블릿, 모바일 화면을 지원하였습니다.',
         ],
       },
@@ -49,17 +49,13 @@ export const ExpList: Array<IExpList> = [
         title: '매쓰플랫 신규 프로젝트 개발',
         date: '2020.07 ~ 2022.06',
         worker: 6,
-        subtitle: `기존 웹 매쓰플랫의 디자인과 DB설계등 이슈로 인해, DB부터 해서 서비스 전체를 갈아엎고 새롭게 만드는 프로젝트 입니다. 기존 서비스는 최소한의 유지보수만 하면서, 불편했던 점들을 개선하고 기존기능에 더불어서 신규 기능 더하는 개발 프로젝트입니다.
-        \r\n 팀 내 사정으로 인해 일정과 목표가 자주 변경되면서  1년 반 가까이 진행되었고, 21년 10월에 클로즈베타, 22년 1월에 오픈베타를 진행하였습니다. 3월부터 구 버전 사용자 전체 전환을 시작해서 22년 6월에 전체 전환을 완료했습니다.
-        `,
+        subtitle: `기존 서비스의 불편함을 해소하기 위해 다시 시작한 프로젝트입니다.`,
         stack: ['React', 'Mobx', 'EmotionJS', 'Storybook', 'Typescript', 'Cypress'],
         mywork: [
-          '프론트엔드 파트(총 6명) 에서 파트 리드를 맡아 일감 분배, 전체 일정 및 진행사항을 관리하고 다른파트와 조율하는 역할을 담당했습니다.',
+          '프론트엔드 파트에서 파트 리드를 맡아 MD 기준으로 일감 분배, 전체 일정 및 진행사항을 관리하고 다른파트와 조율하는 역할을 담당했습니다.',
           '웹 매쓰플랫의 핵심기능인 학습지만들기와 교재만들기 기능 전체를 담당했습니다.',
-          'Cypress를 도입하여 주요 사용패턴 테스트를 하여 QA를 진행하였습니다.',
           'Storybook을 이용해 컴포넌트를 개발, 배포하여 디자이너가 쉽게 작업물을 확인하는 환경을 제공했습니다.',
           '안드로이드 앱 내부에 일부 페이지가 웹뷰로 들어감으로써 기능별 분기처리를 할 수 있는 공통함수와 인증하는 작업을 담당했습니다. (프로젝트 중간에 통 웹뷰로 바뀌게 되면서 폐기 되었습니다.)',
-          '팀 내 생산성 향상을 위해 Jira, Github Actions등을 사용 또는 직접 만들어서 자동화 작업을 진행했습니다.',
         ],
       },
       {
@@ -72,7 +68,6 @@ export const ExpList: Array<IExpList> = [
         mywork: [
           '기존 프로젝트가 상태관리 라이브러리인 Redux thunk와 Mobx를 두개 쓰고 있었는데, Mobx 하나로 통일하는 작업을 맡았습니다.',
           '타입스크립트를 도입해서 리팩토링을 진행했습니다.',
-          '주 고객인 학원 선생님들이 쓰는 핵심 기능 중 하나인 학습지만들기, 교재만들기 기능을 개발을 하였습니다.',
           '서비스 정책과 기능 개발 히스토리 문서화가 부족하다 생각해서, 개발하면서 Notion에 틈틈히 정리하고 공유하였습니다.',
         ],
       },
@@ -90,13 +85,13 @@ export const ExpList: Array<IExpList> = [
         date: '2019.02 ~ 2019.03',
         worker: 2,
         subtitle:
-          '배송 서비스를 진행하기 위해 내부 배송기사용 앱의 개발이 필요했습니다. 빠른 시간 내에 개발해서 사용해야 했기 때문에, 사내 기술스택과 제일 맞는 Ionic4를 이용해서 개발을 하였습니다. 현재는 앱이 내려가있는 상태입니다. ',
+          '배송 서비스를 진행하기 위해 내부 배송기사용 앱을 개발 및 배포하였습니다. 현재는 앱이 내려가있는 상태입니다. ',
         link: 'https://play.google.com/store/apps/details?id=app.fooding.delivery',
         youtube: 'https://www.youtube.com/embed/_tYefWU1kzY',
         stack: ['Ionic 4(Angular)', 'Sass'],
         mywork: [
-          '프론트엔드 개발환경 셋팅 및 전체 기능 구현을 했습니다.',
-          '자동로그인, 주문의 상태에 따른 스텝 표시 및 상태 변환, 안드로이드 테블릿과 모바일에 맞게 반응형으로 구현하였습니다.',
+          '3주 이내에 개발해서 사용해야 했기 때문에, 사내 기술스택과 제일 맞는 Ionic4를 이용해서 전체 개발하였습니다.',
+          '안드로이드 테블릿과 모바일에 맞게 반응형으로 구현하였습니다.',
         ],
       },
       {
@@ -150,6 +145,20 @@ export const details = {
     '비 개발자분들과의 소통을 위해 최대한 쉽게 설명하거나, 예시를 통해 제안하고자 합니다.',
   ],
 }
+
+export const skills = [
+  'HTML',
+  'CSS',
+  'JavaScript',
+  'TypeScript',
+  'React.js',
+  'Redux',
+  'MobX',
+  'Styled Components',
+  'Storybook',
+  'Jest',
+  'Cypress',
+]
 
 // export const Current: Skill[] = [
 //   { name: 'HTML & CSS', url: '/assets/html.png', detail: details['html'] },
