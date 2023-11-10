@@ -1,3 +1,5 @@
+import { ReactNode } from 'react'
+
 export type Skill = {
   name: string
   url: string
@@ -14,6 +16,8 @@ export type Project = {
   memory?: string[]
   youtube?: string
   link?: string
+  description?: ReactNode
+  tobeWork?: Array<string>
 }
 
 export type IProject = {
