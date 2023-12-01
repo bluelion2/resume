@@ -2,7 +2,6 @@ import React from 'react'
 import styled from 'styled-components'
 import { TABLET, MOBILE } from '../types'
 import { IProject } from '../interface/type'
-import { Icon } from 'antd'
 
 const ProjectItem = styled.li`
   list-style: none;

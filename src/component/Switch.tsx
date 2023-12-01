@@ -1,7 +1,6 @@
 import React, { useContext, memo } from 'react'
 import { StoreContext, StoreValue } from '../store'
 import { Switch } from 'antd'
-import 'antd/dist/antd.css'
 import styled from 'styled-components'
 import { TABLET } from '../types'
 
