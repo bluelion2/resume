@@ -31,36 +31,35 @@ export const ExpList: Array<IExpList> = [
       },
       {
         title: '광고 팀 - 우리가게 체험단',
-        date: '2024.10 ~ 2024.12',
+        date: '2024.10 ~ 2025.01',
         worker: 2,
         // subtitle: ``,
         // stack: ['NextJS', 'React Query', 'Typescript', 'TailwindCSS'],
         mywork: [
-          '사장님과 리뷰어를 중개해주는 "우리가게 체험단" 서비스의 유지보수 및 어드민을 개발하였습니다"',
-          '모듈 페더레이션을 활용하여 공통 어드민에 도메인을 통합하여 인증을 간단히 할 수 있도록 하였습니다',
+          '사장님과 리뷰어를 중개해주는 "우리가게 체험단" 서비스의 유지보수 및 어드민을 만들었습니다',
+          '모듈 페더레이션을 활용하여 공통 어드민에 도메인을 통합하여 인증을 간단히 할 수 있도록 했습니다',
         ],
         stack: ['NextJS', 'Typescript', 'Datadog', 'Tailwind css', 'React Query'],
       },
       {
         title: '광고 팀 - 금융중개 관리',
-        date: '2025.01 ~ 진행중',
+        date: '2025.02 ~ 진행중',
         worker: 2,
         // subtitle: ``,
         // stack: ['NextJS', 'React Query', 'Typescript', 'TailwindCSS'],
-        mywork: ['노란우산공제, 외부 금융사의 대출중개 서비스의 유지보수를 진행합니다.'],
+        mywork: ['노란우산공제, 외부 금융사의 대출중개 서비스의 유지보수를 합니다'],
         stack: ['NextJS', 'Typescript', 'Datadog', 'Tailwind css', 'React Query'],
       },
-      {
-        title: '광고 팀 - 혜택 서비스 관리',
-        date: '2025.01 ~ 진행중',
-        worker: 2,
-        // subtitle: ``,
-        mywork: [
-          '외부 광고사 들로부터 받은 광고 목록을 관리하는 어드민과, 유저에게 보여지는 서비스를 개발하고 있습니다.',
-          '백엔드와 프론트, 앱과의 데이터 전달 설계 및 구현하고 있습니다.',
-        ],
-        stack: ['NextJS', 'Typescript', 'Tailwind css', 'React Query'],
-      },
+      // {
+      //   title: '광고 팀 - 혜택 서비스 관리',
+      //   date: '2025.03 ~ 진행중',
+      //   worker: 2,
+      //   // subtitle: ``,
+      //   mywork: [
+      //     '외부 광고사 들로부터 받은 광고 목록을 관리하는 어드민과, 유저에게 보여지는 서비스를 새롭게 만들고 있습니다',
+      //   ],
+      //   stack: ['NextJS', 'Typescript', 'Tailwind css', 'React Query'],
+      // },
       {
         title: '마켓플레이스 팀 FE 개발',
         date: '2023.04 ~ 2024.10',
@@ -87,7 +86,7 @@ export const ExpList: Array<IExpList> = [
           '일매출 500만원 서비스를, 1년 내에 일매출 8,000만원까지 성장하도록 기여했습니다',
           '캐시노트 앱에서 보여지는 마켓 서비스와, 입점사 대상 어드민 서비스 양쪽을 개발했습니다',
           '신용카드 및 무통장 입금 결제, 네이버페이 결제 기능을 개발했습니다',
-          'RSC, Intersection Oberver 등을 통해 LCP 개선에 기여했습니다 (3.3s -> 1.5s)',
+          'RSC, Lazy Loading 들을 통해 LCP 개선에 기여했습니다 (3.3s -> 1.5s)',
           '데이터독의 RUM의 E2E 테스트 구축으로 장애 탐지를 강화하여 서비스 안정성을 높이는데 기여했습니다',
         ],
       },
@@ -117,6 +116,7 @@ export const ExpList: Array<IExpList> = [
           '팀 내 생산성 향상을 위해 Jira API를 활용 또는 Jira Automation, Github Actions등을 구성하여 자동화 작업을 진행했습니다',
           'Github Action, Cypress를 사용하여 서비스 배포 때마다 E2E테스트를 자동으로 실행, 결과를 Slack으로 받을 수 있게 했습니다',
           '서비스 정책과 기능 개발 히스토리 문서화가 부족하다 생각해서, 개발하면서 Notion에 틈틈히 정리하고 공유했습니다',
+          '외주를 통해 만들어진 Electron 앱의 자잘한 버그를 고치며 유지보수 하였습니다.',
         ],
       },
       {
@@ -127,6 +127,7 @@ export const ExpList: Array<IExpList> = [
         // stack: ['React Query', 'React', 'Typescript', 'TailwindCSS', 'Vite', 'React Hook Form'],
         mywork: [
           '과목, 교육과정 등 다양한 구조의 문제 컨텐츠를 생성, 수정, 편집할 수 있는 어드민을 개발했습니다',
+          '주관식, 객관식과 서술형같은 여러 상태를 다루고, 답안 중 수학기호 처리를 공통으로 사용하는 모듈을 개발하였습니다.',
         ],
       },
       // {
