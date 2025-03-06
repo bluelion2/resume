@@ -32,7 +32,7 @@ export const Footer = (): JSX.Element | null => {
               https://github.com/bluelion2
             </a>
           </li>
-          <li>
+          {/* <li>
             Blog:{' '}
             <a
               rel="noopener noreferrer"
@@ -41,7 +41,7 @@ export const Footer = (): JSX.Element | null => {
             >
               bit.ly/3VGpzaw
             </a>
-          </li>
+          </li> */}
           <li>
             resume:
             <a rel="noopener noreferrer" target="_blank" href="https://resume.sh89.now.sh">
@@ -51,12 +51,12 @@ export const Footer = (): JSX.Element | null => {
           <li>
             Mail: <a href="mailto:iltk2000@gmail.com">iltk2000@gmail.com</a>
           </li>
-          <li>
+          {/* <li>
             Portfolio:
             <a target="_blank" rel="noopener noreferrer" href="https://bit.ly/3Ho8Dy0">
               https://bit.ly/3Ho8Dy0
             </a>
-          </li>
+          </li> */}
         </ul>
       </UlBox>
     )

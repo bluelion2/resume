@@ -9,14 +9,13 @@ export type Skill = {
 export type Project = {
   title: string
   date: string
-  worker: number
-  subtitle: string
+  worker?: number
+  subtitle?: ReactNode
   mywork: Array<string>
-  stack: Array<string>
+  stack?: Array<string>
   memory?: string[]
   youtube?: string
   link?: string
-  description?: ReactNode
   tobeWork?: Array<string>
 }
 
@@ -30,4 +29,6 @@ export type IExpList = {
   date: string
   icon?: string
   project: Array<Project>
+  part?: ReactNode
+  stack?: string[]
 }

@@ -24,10 +24,10 @@ const ProjectItem = styled.li`
       }
     }
   }
-  :nth-child(1) {
-    padding: 0 0 20px 0;
+  li {
+    margin: 6px 0;
   }
-  :nth-last-child(1) {
+  li:nth-last-child(1) {
     border-bottom: none;
   }
   ul {
@@ -61,21 +61,16 @@ const StackList = styled.article`
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  margin-left: 35px;
   span {
-    margin-right: 5px;
-    margin-bottom: 5px;
-  }
-  ${TABLET} {
-    margin-left: 0;
+    margin-right: 4px;
   }
 `
 
 const Stack = styled.span`
-  background-color: skyblue;
-  color: white;
-  padding: 10px;
+  border: 1px solid skyblue;
+  padding: 6px;
   border-radius: 10px;
+  font-size: 12px;
   :nth-child(1) {
     margin-left: 0;
   }
@@ -98,7 +93,6 @@ export const Project = ({ project, styleOption }: Props): JSX.Element => {
         <small>{project.date}</small>
       </h4>
       <p>{project.subtitle}</p>
-      {project.description && <div>{project.description}</div>}
       {/* <p>
         {project.subtitle}
         {!styleOption && project.link ? (
@@ -107,20 +101,15 @@ export const Project = ({ project, styleOption }: Props): JSX.Element => {
           </a>
         ) : null}
       </p> */}
-      {/* <StackList>
-        <span>Stack :</span>
-        {styleOption
-          ? project.stack.map((item: string) => <span key={item}>{item}</span>)
-          : project.stack.map((item: string) => <Stack key={item}>{item}</Stack>)}
-      </StackList> */}
+
       <h5>My Work</h5>
       <ul>
         {project.mywork.map((work: string) => (
           <li key={work}>{work}</li>
         ))}
-        {!styleOption && project.youtube ? (
+        {/* {!styleOption && project.youtube ? (
           <iframe src={project.youtube} title="youtube"></iframe>
-        ) : null}
+        ) : null} */}
       </ul>
       {/* {project.memory && (
         <>
@@ -132,6 +121,17 @@ export const Project = ({ project, styleOption }: Props): JSX.Element => {
           </ul>
         </>
       )} */}
+      {project.stack?.length && (
+        <StackList>
+          <span>Stack :</span>
+          {project.stack.map((item) => {
+            return <Stack key={item}>{item}</Stack>
+          })}
+          {/* {styleOption
+          ? project.stack.map((item: string) => <span key={item}>{item}</span>)
+          : project.stack.map((item: string) => <Stack key={item}>{item}</Stack>)} */}
+        </StackList>
+      )}
     </ProjectItem>
   )
 }

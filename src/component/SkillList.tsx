@@ -21,11 +21,11 @@ const List = styled.div`
 export const SkillList = () => {
   return (
     <SkillListSection>
-      <h2>Skills</h2>
+      {/* <h2>Skills</h2>
       <span>
         HTML, CSS, JavaScript, TypeScript, React.js, MobX, Emotion, Storybook, Jest, Cypress,
         Webpack
-      </span>
+      </span> */}
       {/* <List>
         {styleOption
           ? list.map(

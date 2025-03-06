@@ -12,7 +12,6 @@ const ExpBox = styled.div`
   border-radius: 12px;
   p {
     margin-bottom: 10px;
-    margin-left: 38px;
     ${MOBILE} {
       margin-left: 0;
     }
@@ -21,15 +20,19 @@ const ExpBox = styled.div`
 
 const ProjectList = styled.ol`
   list-style: none;
-  ${TABLET} {
-    list-style: none;
-    padding: unset;
-  }
+  padding: 0;
 `
 
 const Icon = styled.img`
   max-width: 70px;
   background-size: contain;
+`
+
+const Part = styled.div`
+  margin-top: 16px;
+  ${MOBILE} {
+    margin-top: 12px;
+  }
 `
 
 export const Exp = (props: { career: IExpList }): JSX.Element => {
@@ -40,11 +43,11 @@ export const Exp = (props: { career: IExpList }): JSX.Element => {
 
   return (
     <ExpBox>
-      <Icon src={career.icon} alt={career.name} />
+      {styleOption && <Icon src={career.icon} alt={career.name} />}
       <h3>{career.name}</h3>
       <p>{career.date}</p>
       <p>{career.subtitle}</p>
-      <h4>주요 업무 내용</h4>
+      {career.part && <Part>{career.part}</Part>}
       <ProjectList>
         {career.project.map((item: IProject['project']) => (
           <Project key={item.title} project={item} styleOption={styleOption} />
