@@ -9,7 +9,7 @@ export const ExpList: Array<IExpList> = [
     icon: '/assets/kcd.png',
     part: (
       <div>
-        <strong>FE 협의체</strong> / <span>챕터 리드</span>
+        <strong>FE 협의체</strong>
         <p>
           "FE 관련 규칙 및 프로세스 리딩 & 공통 라이브러리 관리" 목적 하에, 4명으로 구성된 가상의
           운영조직을 신설했습니다 그 중 일원으로 참여하여 FE 개발자들의 전체 생산성 향상에
