@@ -36,7 +36,7 @@ export const ExpList: Array<IExpList> = [
         // stack: ['NextJS', 'React Query', 'Typescript', 'TailwindCSS'],
         mywork: [
           '사장님과 리뷰어를 중개해주는 "우리가게 체험단" 서비스의 유지보수 및 어드민을 만들었습니다',
-          '모듈 페더레이션을 활용하여 공통 어드민에 도메인을 통합하여 인증을 간단히 할 수 있도록 했습니다',
+          '모듈 페더레이션을 활용하여 공통 어드민에 도메인을 통합하고, 인증을 간단히 할 수 있도록 했습니다',
         ],
         stack: ['NextJS', 'Typescript', 'Datadog', 'Tailwind css', 'React Query'],
       },
@@ -86,7 +86,7 @@ export const ExpList: Array<IExpList> = [
           '캐시노트 앱에서 보여지는 마켓 서비스와, 입점사 대상 어드민 서비스 양쪽을 개발했습니다',
           '신용카드 및 무통장 입금 결제, 네이버페이 결제 기능을 개발했습니다',
           'RSC, Lazy Loading 들을 통해 LCP 개선에 기여했습니다 (3.3s -> 1.5s)',
-          '데이터독의 RUM의 E2E 테스트 구축으로 장애 탐지를 강화하여 서비스 안정성을 높이는데 기여했습니다',
+          '데이터독 RUM의 E2E 테스트 구축으로 장애 탐지를 강화하여 서비스 안정성을 높이는데 기여했습니다',
         ],
       },
     ],

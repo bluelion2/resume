@@ -51,12 +51,12 @@ export const Footer = (): JSX.Element | null => {
           <li>
             Mail: <a href="mailto:iltk2000@gmail.com">iltk2000@gmail.com</a>
           </li>
-          {/* <li>
+          <li>
             Portfolio:
             <a target="_blank" rel="noopener noreferrer" href="https://bit.ly/3Ho8Dy0">
               https://bit.ly/3Ho8Dy0
             </a>
-          </li> */}
+          </li>
         </ul>
       </UlBox>
     )
