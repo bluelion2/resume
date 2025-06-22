@@ -35,6 +35,29 @@ const Part = styled.div`
   }
 `
 
+const StackList = styled.article`
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  span {
+    margin-right: 4px;
+  }
+`
+
+const Stack = styled.span`
+  border: 1px solid skyblue;
+  padding: 6px;
+  border-radius: 10px;
+  font-size: 12px;
+  :nth-child(1) {
+    margin-left: 0;
+  }
+  :hover {
+    background-color: #222;
+    color: white;
+  }
+`
+
 export const Exp = (props: { career: IExpList }): JSX.Element => {
   const { career } = props
   const {
@@ -48,6 +71,14 @@ export const Exp = (props: { career: IExpList }): JSX.Element => {
       <p>{career.date}</p>
       <p>{career.subtitle}</p>
       {career.part && <Part>{career.part}</Part>}
+
+      <StackList>
+        <span>Stack:</span>
+        {career.stack?.map((item) => (
+          <Stack key={item}>{item}</Stack>
+        ))}
+      </StackList>
+
       <ProjectList>
         {career.project.map((item: IProject['project']) => (
           <Project key={item.title} project={item} styleOption={styleOption} />

@@ -17,6 +17,7 @@ export type Project = {
   youtube?: string
   link?: string
   tobeWork?: Array<string>
+  description?: ReactNode
 }
 
 export type IProject = {

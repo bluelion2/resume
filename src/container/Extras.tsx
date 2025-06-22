@@ -5,7 +5,7 @@ import { Extra } from '../data'
 export const Extras = () => {
   return (
     <ExpContainer>
-      {/* <h2>그 외</h2>
+      <h2>그 외</h2>
       {Extra.map((item, index) => {
         return (
           <div key={`${item.date}-${index}`}>
@@ -14,8 +14,8 @@ export const Extras = () => {
               - {item.name} / {item.status}
             </p>
           </div>
-        );
-      })} */}
+        )
+      })}
     </ExpContainer>
   )
 }

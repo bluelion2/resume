@@ -101,8 +101,9 @@ export const Project = ({ project, styleOption }: Props): JSX.Element => {
           </a>
         ) : null}
       </p> */}
-
+      {project.description}
       <h5>My Work</h5>
+
       <ul>
         {project.mywork.map((work: string) => (
           <li key={work}>{work}</li>
