@@ -10,6 +10,7 @@ const ProjectItem = styled.li`
   border-bottom: 1px dotted lightgray;
   h4,
   h5 {
+    margin: 0;
     small {
       margin-left: 10px;
       font-weight: normal;
@@ -31,7 +32,7 @@ const ProjectItem = styled.li`
     border-bottom: none;
   }
   ul {
-    margin: 20px 0;
+    margin: 0 0 0 0;
     ${TABLET} {
       list-style: none;
       padding: unset;
@@ -80,6 +81,18 @@ const Stack = styled.span`
   }
 `
 
+const Description = styled.div`
+  display: flex;
+  gap: 40px;
+
+  h5:first-child {
+    min-width: 44px;
+  }
+  > div {
+    margin-left: 24px;
+  }
+`
+
 type Props = {
   project: IProject['project']
   styleOption: boolean
@@ -101,17 +114,24 @@ export const Project = ({ project, styleOption }: Props): JSX.Element => {
           </a>
         ) : null}
       </p> */}
-      {project.description}
-      <h5>My Work</h5>
+      {project.description && (
+        <Description>
+          <h5>설명</h5>
+          {project.description}
+        </Description>
+      )}
+      <Description style={{ marginTop: 20 }}>
+        <h5>업무</h5>
 
-      <ul>
-        {project.mywork.map((work: string) => (
-          <li key={work}>{work}</li>
-        ))}
-        {/* {!styleOption && project.youtube ? (
+        <ul>
+          {project.mywork.map((work: string) => (
+            <li key={work}>{work}</li>
+          ))}
+          {/* {!styleOption && project.youtube ? (
           <iframe src={project.youtube} title="youtube"></iframe>
         ) : null} */}
-      </ul>
+        </ul>
+      </Description>
       {/* {project.memory && (
         <>
           <h5>기억에 남는 점</h5>

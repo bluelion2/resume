@@ -39,6 +39,7 @@ const StackList = styled.article`
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  margin-top: 20px;
   span {
     margin-right: 4px;
   }
