@@ -27,9 +27,8 @@ export const Footer = (): JSX.Element | null => {
       <UlBox>
         <ul>
           <li>
-            Github:{' '}
             <a rel="noopener noreferrer" target="_blank" href="https://github.com/bluelion2">
-              https://github.com/bluelion2
+              Github
             </a>
           </li>
           {/* <li>
@@ -43,7 +42,7 @@ export const Footer = (): JSX.Element | null => {
             </a>
           </li> */}
           <li>
-            Mail: <a href="mailto:iltk2000@gmail.com">iltk2000@gmail.com</a>
+            <a href="mailto:iltk2000@gmail.com">Mail</a>
           </li>
           <li>
             <a target="_blank" rel="noopener noreferrer" href="https://ksh-resume.vercel.app/">
