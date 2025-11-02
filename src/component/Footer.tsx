@@ -43,18 +43,11 @@ export const Footer = (): JSX.Element | null => {
             </a>
           </li> */}
           <li>
-            resume:
-            <a rel="noopener noreferrer" target="_blank" href="https://resume.sh89.now.sh">
-              https://resume.sh89.now.sh
-            </a>
-          </li>
-          <li>
             Mail: <a href="mailto:iltk2000@gmail.com">iltk2000@gmail.com</a>
           </li>
           <li>
-            Portfolio:
-            <a target="_blank" rel="noopener noreferrer" href="https://bit.ly/3Ho8Dy0">
-              https://bit.ly/3Ho8Dy0
+            <a target="_blank" rel="noopener noreferrer" href="https://ksh-resume.vercel.app/">
+              Notion Resume
             </a>
           </li>
         </ul>
