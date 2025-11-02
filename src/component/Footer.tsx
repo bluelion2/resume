@@ -47,7 +47,7 @@ export const Footer = (): JSX.Element | null => {
           </li>
           <li>
             <a target="_blank" rel="noopener noreferrer" href="https://ksh-resume.vercel.app/">
-              Notion Resume
+              포트폴리오
             </a>
           </li>
         </ul>
