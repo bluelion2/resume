@@ -3,8 +3,8 @@
 ## Start
 
 ```sh
-    yarn install
-    yarn  start
+    pnpm install
+    pnpm dev
 ```
 
 ---
@@ -14,6 +14,7 @@
 ```sh
     Typescript
     React
+    Vite
     Styled-component
     deploy: vercel
 ```

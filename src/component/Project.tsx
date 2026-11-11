@@ -98,7 +98,7 @@ type Props = {
   styleOption: boolean
 }
 
-export const Project = ({ project, styleOption }: Props): JSX.Element => {
+export const Project = ({ project, styleOption }: Props): React.JSX.Element => {
   return (
     <ProjectItem>
       <h4>

@@ -18,7 +18,7 @@ const SwitchSection: any = styled.div`
   }
 `
 
-const SwitchIcon = (): JSX.Element => {
+const SwitchIcon = (): React.JSX.Element => {
   return <></>
   // const {
   //   printStyle: [styleOption, setStyleOption],

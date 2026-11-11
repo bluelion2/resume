@@ -12,7 +12,7 @@ export const ExpContainer = styled.section`
   }
 `
 
-export const Exps = (): JSX.Element => {
+export const Exps = (): React.JSX.Element => {
   return (
     <ExpContainer>
       <h2>Work Experience</h2>

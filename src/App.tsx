@@ -3,7 +3,7 @@ import { Main, Profile } from './container'
 import { Footer } from './component'
 import Switch from './component/Switch'
 
-const App = (): JSX.Element => {
+const App = (): React.JSX.Element => {
   return (
     <>
       <Switch />

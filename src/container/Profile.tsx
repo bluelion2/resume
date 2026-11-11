@@ -12,7 +12,7 @@ const ProfileBox = styled.header`
   }
 `
 
-export const Profile = (): JSX.Element => {
+export const Profile = (): React.JSX.Element => {
   const {
     printStyle: [styleOption],
   } = useContext<StoreValue>(StoreContext)

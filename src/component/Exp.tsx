@@ -59,7 +59,7 @@ const Stack = styled.span`
   }
 `
 
-export const Exp = (props: { career: IExpList }): JSX.Element => {
+export const Exp = (props: { career: IExpList }): React.JSX.Element => {
   const { career } = props
   const {
     printStyle: [styleOption],

@@ -12,7 +12,7 @@ const MainContainer = styled.main`
   padding-bottom: 5vh;
 `
 
-export const Main = (): JSX.Element => {
+export const Main = (): React.JSX.Element => {
   return (
     <MainContainer>
       <Exps />

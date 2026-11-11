@@ -18,7 +18,7 @@ const UlBox = styled.footer`
   }
 `
 
-export const Footer = (): JSX.Element | null => {
+export const Footer = (): React.JSX.Element | null => {
   const {
     printStyle: [styleOption],
   } = useContext<StoreValue>(StoreContext)

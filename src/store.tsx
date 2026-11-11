@@ -2,7 +2,7 @@ import React, { createContext, useState } from 'react'
 
 export const StoreContext = createContext({} as StoreValue)
 
-export default ({ children }: { children: JSX.Element }) => {
+export default ({ children }: { children: React.JSX.Element }) => {
   const [styleOption, setStyleOption] = useState(false)
   const store: StoreValue = {
     printStyle: [styleOption, setStyleOption],
