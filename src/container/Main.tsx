@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { Exps } from './Exps'
 import { Extras } from './Extras'
-import { SkillList } from '../component'
+// import { SkillList } from '../component'
 
 const MainContainer = styled.main`
   display: flex;
@@ -16,7 +16,7 @@ export const Main = (): React.JSX.Element => {
   return (
     <MainContainer>
       <Exps />
-      <SkillList />
+      {/* <SkillList /> */}
       <Extras />
     </MainContainer>
   )

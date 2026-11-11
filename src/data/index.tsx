@@ -8,7 +8,7 @@ export const ExpList: Array<IExpList> = [
       '사장님의 모든 순간을 위한 서비스 "캐시노트"의 서비스를 개발하는 업무를 담당합니다. 캐시노트 내의 다양한 서비스 중, 사장님들이 보다 싸게 물품을 구매할 수 있는 마켓 서비스를 담당하고 있습니다.',
     date: '2023.04 ~ 재직중',
     icon: '/assets/kcd.png',
-    stack: ['Next.js', 'TypeScript', 'React Query', 'Tailwind CSS'],
+    stack: ['Next.js', 'Vite', 'TypeScript', 'React Query', 'Tailwind CSS'],
 
     project: [
       {

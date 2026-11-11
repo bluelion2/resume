@@ -73,12 +73,12 @@ export const Exp = (props: { career: IExpList }): React.JSX.Element => {
       <p>{career.subtitle}</p>
       {career.part && <Part>{career.part}</Part>}
 
-      <StackList>
+      {/* <StackList>
         <span>Stack:</span>
         {career.stack?.map((item) => (
           <Stack key={item}>{item}</Stack>
         ))}
-      </StackList>
+      </StackList> */}
 
       <ProjectList>
         {career.project.map((item: IProject['project']) => (
