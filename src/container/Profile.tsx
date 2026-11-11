@@ -33,13 +33,7 @@ export const Profile = (): React.JSX.Element => {
         <br />
       </p>
       <p>
-        <a
-          rel="noopener noreferrer"
-          target="_blank"
-          href="https://seunghun89.notion.site/About-ME-13df0df48e634cc29b7314931f074434"
-        >
-          경력기술서
-        </a>
+        <a href="/career/">경력기술서</a>
       </p>
     </ProfileBox>
   )
