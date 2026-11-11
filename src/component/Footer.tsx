@@ -45,8 +45,12 @@ export const Footer = (): JSX.Element | null => {
             <a href="mailto:iltk2000@gmail.com">Mail</a>
           </li>
           <li>
-            <a target="_blank" rel="noopener noreferrer" href="https://ksh-resume.vercel.app/">
-              포트폴리오
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://seunghun89.notion.site/About-ME-13df0df48e634cc29b7314931f074434"
+            >
+              Notion
             </a>
           </li>
         </ul>

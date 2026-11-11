@@ -20,27 +20,27 @@ export const Profile = (): JSX.Element => {
   return (
     <ProfileBox>
       <h1>
-        안녕하세요. <br /> 프론트엔드 엔지니어 강승훈입니다.
+        안녕하세요. <br /> 개발자 강승훈입니다.
       </h1>
       <p>
-        저는 사용자의 입장에서 생각하고 더 사용하기 편리한 방향으로 개발하고자 합니다.
-        <br /> 또한 내가 개발하는 서비스에 대해 깊게 이해하고, 의견을 제시할 수 있는 환경을
-        선호합니다.
-        <br /> 다른 동료들과 소통하고 의견을 나누며, 기록하고 공유하는 것을 좋아합니다.
+        저는 사용자의 입장에서 생각하는 개발자가 되고자 합니다. 또한 보다 편리하게 사용할 수 있는
+        방향으로 개발하고자 합니다.
+        <br />
+        또한 제가 개발하는 서비스를 깊이 이해하고, 의견을 제시할 수 있는 환경을 선호합니다.
+        <br /> 간단히 논의된 내용이라도 기록하고, 히스토리를 파악해 서비스의 흐름을 찾는 것을
+        좋아합니다
         <br />
         <br />
       </p>
-      {!styleOption && (
-        <p>
-          <a
-            rel="noopener noreferrer"
-            target="_blank"
-            href="https://seunghun89.notion.site/About-ME-13df0df48e634cc29b7314931f074434"
-          >
-            상세 내용 링크
-          </a>
-        </p>
-      )}
+      <p>
+        <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://seunghun89.notion.site/About-ME-13df0df48e634cc29b7314931f074434"
+        >
+          경력기술서
+        </a>
+      </p>
     </ProfileBox>
   )
 }
