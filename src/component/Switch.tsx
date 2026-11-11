@@ -19,19 +19,20 @@ const SwitchSection: any = styled.div`
 `
 
 const SwitchIcon = (): JSX.Element => {
-  const {
-    printStyle: [styleOption, setStyleOption],
-  } = useContext<StoreValue>(StoreContext)
-  const handleChange = (checked: boolean): void => {
-    setStyleOption(checked)
-  }
+  return <></>
+  // const {
+  //   printStyle: [styleOption, setStyleOption],
+  // } = useContext<StoreValue>(StoreContext)
+  // const handleChange = (checked: boolean): void => {
+  //   setStyleOption(checked)
+  // }
 
-  return (
-    <SwitchSection>
-      <span>{styleOption ? 'PDF' : 'Icon'}</span>
-      <Switch checked={styleOption} onChange={handleChange} />
-    </SwitchSection>
-  )
+  // return (
+  //   <SwitchSection>
+  //     <span>{styleOption ? 'PDF' : 'Icon'}</span>
+  //     <Switch checked={styleOption} onChange={handleChange} />
+  //   </SwitchSection>
+  // )
 }
 
 export default memo(SwitchIcon)
